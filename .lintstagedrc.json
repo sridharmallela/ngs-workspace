@@ -1,4 +1,8 @@
 {
   "!(*ignore)": ["prettier --write"],
-  "**/*.{js,jsx,ts,tsx}": ["prettier --write", "eslint --fix", "npm test"]
+  "packages/**/*.{js,jsx,ts,tsx}": [
+    "prettier --write",
+    "eslint --fix",
+    "npm test"
+  ]
 }
