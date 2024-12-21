@@ -1,1 +1,1 @@
-export * from './lib/print-cli.js';
+export * from './lib/print-cli';

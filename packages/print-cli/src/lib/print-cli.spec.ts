@@ -1,4 +1,4 @@
-import { printCli } from './print-cli.js';
+import { printCli } from './print-cli';
 
 describe('printCli', () => {
   it('should work', () => {
