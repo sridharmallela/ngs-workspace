@@ -11,6 +11,11 @@
       "testEnvironment": "node",
       "unitTestRunner": "jest",
       "useProjectJson": true
+    },
+    "@nx/node:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "useProjectJson": true
     }
   },
   "targetDefaults": {
@@ -36,6 +41,11 @@
         "passWithNoTests": false,
         "codeCoverage": true
       }
+    },
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   },
   "namedInputs": {
