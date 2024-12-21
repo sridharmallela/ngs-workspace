@@ -1,0 +1,8 @@
+{
+  "main": "./dist/index.js",
+  "name": "@my-workspace/versions-checker",
+  "private": true,
+  "type": "commonjs",
+  "typings": "./dist/index.d.ts",
+  "version": "0.0.1"
+}

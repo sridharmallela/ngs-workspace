@@ -8,6 +8,9 @@
     },
     {
       "path": "./packages/programmer"
+    },
+    {
+      "path": "./packages/versions-checker"
     }
   ]
 }
