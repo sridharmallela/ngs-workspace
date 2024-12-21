@@ -1,8 +1,32 @@
 {
-  "main": "./dist/index.js",
-  "name": "@my-workspace/programmer",
+  "name": "programmer",
+  "version": "3.0.2",
+  "description": "Programmer AOP for commander",
+  "author": "Sridhar Mallela",
+  "license": "MIT",
   "private": true,
+  "homepage": "https://sridharmallela.github.io/my-workspace/packages/programmer/",
   "type": "commonjs",
-  "typings": "./dist/index.d.ts",
-  "version": "0.0.1"
+  "main": "./index.js",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sridharmallela/my-workspace.git",
+    "directory": "packages/programmer"
+  },
+  "bugs": {
+    "url": "https://github.com/sridharmallela/my-workspace/issues"
+  },
+  "config": {
+    "unsafe-perm": true
+  },
+  "directories": {
+    "bin": "bin"
+  },
+  "keywords": [
+    "nobody"
+  ],
+  "dependencies": {
+    "commander": "12.1.0"
+  }
 }
