@@ -1,6 +1,18 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "defaultBase": "master",
+  "cli": {
+    "packageManager": "npm"
+  },
+  "defaultBase": "main",
+  "generators": {
+    "@nx/js:library": {
+      "bundler": "tsc",
+      "linter": "eslint",
+      "testEnvironment": "node",
+      "unitTestRunner": "jest",
+      "useProjectJson": true
+    }
+  },
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
@@ -40,5 +52,9 @@
       },
       "plugin": "@nx/jest/plugin"
     }
-  ]
+  ],
+  "workspaceLayout": {
+    "appsDir": "packages",
+    "libsDir": "packages"
+  }
 }
