@@ -1,4 +1,4 @@
 {
-  "**/*.{html,json,css,scss,md,mdx}": ["prettier --write"],
+  "!(*ignore)": ["prettier --write"],
   "**/*.{js,jsx,ts,tsx}": ["prettier --write"]
 }
