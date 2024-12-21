@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "./../../../dist/eslint",
-    "tsBuildInfoFile": "./../../../dist/eslint/tsconfig.lib.tsbuildinfo",
+    "tsBuildInfoFile": "./../../../out-tsc/eslint/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
     "types": ["node"]
   },

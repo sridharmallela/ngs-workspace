@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "./../../dist/jest-preset",
-    "tsBuildInfoFile": "./../../dist/jest-preset/tsconfig.lib.tsbuildinfo",
+    "tsBuildInfoFile": "./../../out-tsc/jest-preset/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
     "types": ["node"]
   },

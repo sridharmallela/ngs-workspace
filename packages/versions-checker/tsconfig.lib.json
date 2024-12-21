@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "./../../dist/versions-checker",
-    "tsBuildInfoFile": "./../../dist/versions-checker/tsconfig.lib.tsbuildinfo",
+    "tsBuildInfoFile": "./../../out-tsc/versions-checker/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
     "types": ["node"]
   },

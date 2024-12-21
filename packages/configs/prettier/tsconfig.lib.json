@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "./../../../dist/prettier",
-    "tsBuildInfoFile": "./../../../dist/prettier/tsconfig.lib.tsbuildinfo",
+    "tsBuildInfoFile": "./../../../out-tsc/prettier/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
     "types": ["node"]
   },

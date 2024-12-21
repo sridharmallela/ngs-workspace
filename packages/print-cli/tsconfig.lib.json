@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "./../../dist/print-cli",
-    "tsBuildInfoFile": "./../../dist/print-cli/tsconfig.lib.tsbuildinfo",
+    "tsBuildInfoFile": "./../../out-tsc/print-cli/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
     "types": ["node"]
   },
