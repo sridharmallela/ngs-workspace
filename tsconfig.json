@@ -17,6 +17,9 @@
     },
     {
       "path": "./packages/configs/prettier"
+    },
+    {
+      "path": "./packages/configs/eslint"
     }
   ]
 }
