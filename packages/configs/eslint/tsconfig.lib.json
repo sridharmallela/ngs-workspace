@@ -3,8 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "src",
-    "outDir": "./../../../dist/eslint",
-    "tsBuildInfoFile": "./../../../out-tsc/eslint/tsconfig.lib.tsbuildinfo",
+    "outDir": "./dist",
+    "tsBuildInfoFile": "./out-tsc/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
     "types": ["node"]
   },

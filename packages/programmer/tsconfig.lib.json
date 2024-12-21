@@ -1,14 +1,14 @@
 {
   "extends": "./../../tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "./../../dist/programmer/",
-    "rootDir": "src",
-    "tsBuildInfoFile": "./../../out-tsc/programmer/tsconfig.lib.tsbuildinfo",
     "allowJs": true,
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "rootDir": "src",
+    "tsBuildInfoFile": "./out-tsc/tsconfig.lib.tsbuildinfo",
     "types": ["node"]
   },
   "include": ["src/**/*.js"],
   "references": [],
-  "exclude": ["*.ts", "src/**/*.spec.js", "src/**/*.test.js"]
+  "exclude": ["src/**/*.spec.js", "src/**/*.test.js"]
 }

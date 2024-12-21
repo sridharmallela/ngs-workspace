@@ -3,8 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "src",
-    "outDir": "./../../dist/print-cli",
-    "tsBuildInfoFile": "./../../out-tsc/print-cli/tsconfig.lib.tsbuildinfo",
+    "outDir": "./dist",
+    "tsBuildInfoFile": "./out-tsc/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
     "types": ["node"]
   },

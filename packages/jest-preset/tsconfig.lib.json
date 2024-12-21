@@ -3,8 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "src",
-    "outDir": "./../../dist/jest-preset",
-    "tsBuildInfoFile": "./../../out-tsc/jest-preset/tsconfig.lib.tsbuildinfo",
+    "outDir": "./dist",
+    "tsBuildInfoFile": "./out-tsc/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
     "types": ["node"]
   },

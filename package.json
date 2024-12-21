@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "nx run-many -t build",
-    "clean": "rimraf \"./coverage\" \"./dist\" \"out-tsc\"",
+    "clean": "rimraf \"./coverage\"",
     "lint": "nx run-many -t lint",
     "prepare": "is-ci || husky",
     "test": "nx run-many -t test",

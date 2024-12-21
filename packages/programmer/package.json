@@ -7,8 +7,8 @@
   "private": true,
   "homepage": "https://sridharmallela.github.io/my-workspace/packages/programmer/",
   "type": "commonjs",
-  "main": "./index.js",
-  "typings": "./index.d.ts",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sridharmallela/my-workspace.git",
@@ -20,12 +20,7 @@
   "config": {
     "unsafe-perm": true
   },
-  "directories": {
-    "bin": "bin"
-  },
-  "keywords": [
-    "nobody"
-  ],
+  "keywords": [],
   "dependencies": {
     "commander": "12.1.0"
   }
