@@ -1,10 +1,12 @@
-name: CI
+name: Workspace CI
 
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
+    branches:
+      - main
 
 permissions:
   actions: read

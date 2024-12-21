@@ -1,3 +1,20 @@
 {
-  "singleQuote": true
+  "arrowParens": "avoid",
+  "bracketSameLine": true,
+  "endOfLine": "lf",
+  "jsxSingleQuote": false,
+  "overrides": [
+    {
+      "files": "{*.ts,*.js,*.scss}",
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ],
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "semi": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "useTabs": false
 }
