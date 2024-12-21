@@ -1,0 +1,9 @@
+{
+  "$schema": "./../../node_modules/nx/schemas/project-schema.json",
+  "// targets": "to see all targets run: nx show project print-cli --web",
+  "name": "print-cli",
+  "projectType": "library",
+  "sourceRoot": "packages/print-cli/src",
+  "tags": [],
+  "targets": {}
+}
