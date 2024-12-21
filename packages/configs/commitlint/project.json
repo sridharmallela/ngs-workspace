@@ -1,0 +1,9 @@
+{
+  "$schema": "./../../../node_modules/nx/schemas/project-schema.json",
+  "// targets": "to see all targets run: nx show project commitlint --web",
+  "name": "commitlint",
+  "projectType": "library",
+  "sourceRoot": "packages/configs/commitlint/src",
+  "tags": [],
+  "targets": {}
+}

@@ -11,6 +11,9 @@
     },
     {
       "path": "./packages/versions-checker"
+    },
+    {
+      "path": "./packages/configs/commitlint"
     }
   ]
 }
