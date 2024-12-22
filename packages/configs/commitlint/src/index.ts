@@ -1,1 +1,1 @@
-export * from './lib/commitlint';
+export * from './lib/commitlint.js';
