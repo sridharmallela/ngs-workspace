@@ -1,7 +1,7 @@
 {
   "name": "commitlint-config-smalella",
-  "version": "0.0.1",
-  "description": "Programmer AOP for commander",
+  "version": "1.0.0",
+  "description": "Commitlint configs for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
   "private": true,
