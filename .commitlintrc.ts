@@ -2,7 +2,7 @@ import { utils } from '@commitlint/config-nx-scopes';
 import { RuleConfigSeverity } from '@commitlint/types';
 
 export default {
-  extends: ['smalella', '@commitlint/config-nx-scopes'],
+  extends: ['smallela', '@commitlint/config-nx-scopes'],
   rules: {
     'scope-enum': async ctx => [
       RuleConfigSeverity.Error,

@@ -1,9 +1,9 @@
-import { prettierConfig as testCandidate } from './prettier.js';
+import { prettierConfig } from './prettier.js';
 
 describe('Prettier Config ---', () => {
   test('for valid', () => {
-    expect(testCandidate).toBeDefined();
-    expect(testCandidate).toEqual({
+    expect(prettierConfig).toBeDefined();
+    expect(prettierConfig).toEqual({
       arrowParens: 'avoid',
       bracketSameLine: true,
       bracketSpacing: true,
