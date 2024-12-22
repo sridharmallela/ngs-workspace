@@ -36,7 +36,7 @@
       }
     },
     {
-      "files": [".prettierrc"],
+      "files": [".prettierrc", "*.code-snippets"],
       "options": {
         "parser": "json"
       }
