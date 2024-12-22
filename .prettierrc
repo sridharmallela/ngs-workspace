@@ -1,20 +1,45 @@
 {
   "arrowParens": "avoid",
   "bracketSameLine": true,
+  "bracketSpacing": true,
   "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
   "jsxSingleQuote": false,
-  "overrides": [
-    {
-      "files": "{*.ts,*.js,*.scss}",
-      "options": {
-        "singleQuote": true
-      }
-    }
-  ],
   "printWidth": 80,
   "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
   "semi": true,
+  "singleAttributePerLine": false,
+  "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "none",
-  "useTabs": false
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx", "*.mjs", "*.cjs"],
+      "options": {
+        "jsxSingleQuote": true
+      }
+    },
+    {
+      "files": ["*.html", "*.yml"],
+      "options": {
+        "singleQuote": false
+      }
+    },
+    {
+      "files": ["*.md"],
+      "options": {
+        "proseWrap": "never"
+      }
+    },
+    {
+      "files": [".prettierrc"],
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
 }

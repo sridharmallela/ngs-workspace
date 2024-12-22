@@ -1,9 +1,14 @@
-const nxPreset = require("@nx/jest/preset").default;
+const { default: isCI } = require('is-ci');
+const { default: nxPreset } = require('@nx/jest/preset');
+
+const esModules = ['@commitlint', 'prettier'].join('|');
 
 module.exports = {
   ...nxPreset,
   collectCoverage: true,
-  coverageReporters: ["json", "text", "lcovonly", "html", "cobertura"],
+  coverageReporters: isCI
+    ? ['json', 'text', 'lcovonly', 'cobertura']
+    : ['text', 'html'],
   coverageThreshold: {
     global: {
       branches: 100,
@@ -11,7 +16,7 @@ module.exports = {
       lines: 100,
       statements: 100
     },
-    "**/*": {
+    '**/*': {
       branches: 100,
       functions: 100,
       lines: 100,
@@ -20,5 +25,7 @@ module.exports = {
   },
   errorOnDeprecated: true,
   slowTestThreshold: 5,
-  testEnvironment: "node"
+  testTimeout: 20000,
+  testEnvironment: 'node',
+  transformIgnorePatterns: [`node_modules/(?!${esModules}|.*\\.mjs)`]
 };

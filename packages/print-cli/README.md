@@ -2,17 +2,9 @@
 
 # Print CLI
 
-[![npm](https://img.shields.io/npm/v/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli)
-[![npm](https://img.shields.io/npm/dw/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli)
-[![npm](https://img.shields.io/npm/dm/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli)
-[![npm](https://img.shields.io/npm/dy/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli)
-[![npm](https://img.shields.io/npm/dt/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli)
+[![npm](https://img.shields.io/npm/v/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli) [![npm](https://img.shields.io/npm/dw/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli) [![npm](https://img.shields.io/npm/dm/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli) [![npm](https://img.shields.io/npm/dy/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli) [![npm](https://img.shields.io/npm/dt/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli)
 
-[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/tags)
-[![GitHub release](https://img.shields.io/github/release/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/releases)
-[![GitHub issues](https://img.shields.io/github/issues/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/pulls)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/print-cli/main/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/print-cli/main/LICENSE)
 
 Generate a printable representation of ASCII text. Thanks to [Figlet](https://www.npmjs.com/package/figlet). Try it [here](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
@@ -82,26 +74,26 @@ $ print-cli --banner --font slant "Hello World"
 ### Non CLI
 
 ```js
-var print = require("print-cli");
+var print = require('print-cli');
 
 print.PRINT({
-  text: "",
+  text: '',
   isBanner: true | false,
-  font: "standard|doom|slant|bell|chunky",
-  color: "blue|black|cyan|green|grey|magenta|red|white|yellow",
-  bgColor: "bgBlack|bgBlue|bgCyan|bgGreen|bgMagenta|bgRed|bgWhite|bgYellow"
+  font: 'standard|doom|slant|bell|chunky',
+  color: 'blue|black|cyan|green|grey|magenta|red|white|yellow',
+  bgColor: 'bgBlack|bgBlue|bgCyan|bgGreen|bgMagenta|bgRed|bgWhite|bgYellow'
 });
 ```
 
 ```ts
-import { PRINT } from "print-cli";
+import { PRINT } from 'print-cli';
 
 PRINT({
-  text: "",
+  text: '',
   isBanner: true | false,
-  font: "standard|doom|slant|bell|chunky",
-  color: "blue|black|cyan|green|grey|magenta|red|white|yellow",
-  bgColor: "bgBlack|bgBlue|bgCyan|bgGreen|bgMagenta|bgRed|bgWhite|bgYellow"
+  font: 'standard|doom|slant|bell|chunky',
+  color: 'blue|black|cyan|green|grey|magenta|red|white|yellow',
+  bgColor: 'bgBlack|bgBlue|bgCyan|bgGreen|bgMagenta|bgRed|bgWhite|bgYellow'
 });
 ```
 
@@ -234,20 +226,8 @@ Global package:
 
 ## License
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
