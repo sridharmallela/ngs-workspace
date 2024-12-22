@@ -5,7 +5,9 @@
   "scripts": {
     "build": "nx run-many -t build",
     "clean": "rimraf \"./coverage\"",
+    "commitlint": "is-ci || nx build commitlint",
     "lint": "nx run-many -t lint",
+    "postinstall": "npm run commitlint",
     "prepare": "is-ci || husky",
     "test": "nx run-many -t test",
     "validate": "npm run clean && npm run lint && npm test && npm run build"
@@ -17,9 +19,7 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "~19.6.1",
-    "@commitlint/config-conventional": "~19.6.0",
     "@commitlint/config-nx-scopes": "~19.5.0",
-    "@commitlint/prompt-cli": "~19.6.1",
     "@commitlint/types": "~19.5.0",
     "@nx/eslint": "20.3.0",
     "@nx/eslint-plugin": "20.3.0",
@@ -34,6 +34,7 @@
     "@typescript-eslint/eslint-plugin": "~7.16.1",
     "@typescript-eslint/parser": "~7.16.1",
     "colors": "~1.4.0",
+    "commitlint-config-smalella": "~0.0.1",
     "commander": "~12.1.0",
     "eslint": "~8.57.1",
     "eslint-config-prettier": "~9.1.0",
