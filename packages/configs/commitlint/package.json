@@ -1,8 +1,27 @@
 {
-  "main": "./dist/index.js",
-  "name": "@my-workspace/commitlint",
+  "name": "commitlint-config-smallela",
+  "version": "1.0.0",
+  "description": "Commitlint configs for my projects",
+  "author": "Sridhar Mallela",
+  "license": "MIT",
   "private": true,
-  "type": "commonjs",
+  "homepage": "https://sridharmallela.github.io/my-workspace/packages/configs/commitlint/",
+  "type": "module",
+  "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "version": "0.0.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sridharmallela/my-workspace.git",
+    "directory": "packages/configs/commitlint"
+  },
+  "bugs": {
+    "url": "https://github.com/sridharmallela/my-workspace/issues"
+  },
+  "config": {
+    "unsafe-perm": true
+  },
+  "keywords": [],
+  "dependencies": {
+    "@commitlint/types": "~19.5.0"
+  }
 }

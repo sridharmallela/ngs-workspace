@@ -1,8 +1,30 @@
 {
-  "main": "./dist/index.js",
-  "name": "@my-workspace/prettier",
+  "name": "prettier-config-smallela",
+  "version": "1.0.0",
+  "description": "prettier configs for my projects",
+  "author": "Sridhar Mallela",
+  "license": "MIT",
   "private": true,
-  "type": "commonjs",
+  "homepage": "https://sridharmallela.github.io/my-workspace/packages/configs/prettier/",
+  "type": "module",
+  "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "version": "0.0.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sridharmallela/my-workspace.git",
+    "directory": "packages/configs/prettier"
+  },
+  "bugs": {
+    "url": "https://github.com/sridharmallela/my-workspace/issues"
+  },
+  "config": {
+    "unsafe-perm": true
+  },
+  "keywords": [],
+  "peerDependencies": {
+    "prettier": "~3.4.2"
+  },
+  "dependencies": {
+    "@prettier/plugin-xml": "~3.4.1"
+  }
 }

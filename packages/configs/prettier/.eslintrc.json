@@ -21,7 +21,7 @@
         "@nx/dependency-checks": [
           "error",
           {
-            "ignoredDependencies": ["tslib"],
+            "ignoredDependencies": ["@prettier/plugin-xml", "tslib"],
             "ignoredFiles": ["{projectRoot}/eslint.config.{js,cjs,mjs}"]
           }
         ]
