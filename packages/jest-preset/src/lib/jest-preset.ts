@@ -13,6 +13,8 @@ const JEST_CONFIG_SMALLELA = {
     '/generated/',
     '/node_modules/',
     '(.*)\\.d.ts',
+    'index.[jt]s',
+    'jest.config.ts',
     'test-setup.ts'
   ],
   coverageReporters: isCI

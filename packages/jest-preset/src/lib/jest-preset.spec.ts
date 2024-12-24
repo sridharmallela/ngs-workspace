@@ -16,6 +16,8 @@ describe('Prettier Config ---', () => {
         '/generated/',
         '/node_modules/',
         '(.*)\\.d.ts',
+        'index.[jt]s',
+        'jest.config.ts',
         'test-setup.ts'
       ],
       coverageReporters: ['text', 'html'],
