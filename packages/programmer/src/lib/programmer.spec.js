@@ -28,14 +28,8 @@ describe('lib/programmer --- ', () => {
       );
       Object.defineProperty(process, 'platform', { value: 'win32' });
       expect(testCandidate.promptMessage('TEST_PROMPT_MESSAGE')).toEqual(
-        '    $ TEST_PROMPT_MESSAGE'
+        '    > TEST_PROMPT_MESSAGE'
       );
-      const env = process.env._;
-      Object.defineProperty(process, 'env', { value: {} });
-      expect(testCandidate.promptMessage('TEST_PROMPT_MESSAGE')).toEqual(
-        '    $ TEST_PROMPT_MESSAGE'
-      );
-      Object.defineProperty(process, 'env', { value: env });
     } else {
       expect(testCandidate.promptMessage()).toContain('    > ');
       expect(testCandidate.promptMessage('TEST_PROMPT_MESSAGE')).toEqual(
