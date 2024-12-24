@@ -9,8 +9,9 @@
     "lint": "nx run-many -t lint",
     "postinstall": "npm run commitlint && npm run prettier-config",
     "prepare": "is-ci || husky",
+    "pretest": "nx build jest-preset",
     "prettier-config": "is-ci || nx build prettier",
-    "test": "nx run-many -t test --verbose",
+    "test": "nx run-many -t test",
     "validate": "npm run clean && npm run lint && npm test && npm run build"
   },
   "private": true,

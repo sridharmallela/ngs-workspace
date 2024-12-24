@@ -33,7 +33,7 @@ describe('lib/programmer --- ', () => {
       const env = process.env._;
       Object.defineProperty(process, 'env', { value: {} });
       expect(testCandidate.promptMessage('TEST_PROMPT_MESSAGE')).toEqual(
-        '    > TEST_PROMPT_MESSAGE'
+        '    $ TEST_PROMPT_MESSAGE'
       );
       Object.defineProperty(process, 'env', { value: env });
     } else {
