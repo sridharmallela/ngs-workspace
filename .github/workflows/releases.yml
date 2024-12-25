@@ -29,12 +29,9 @@ jobs:
       - name: Set Nx tasks
         uses: nrwl/nx-set-shas@v4
 
-      - name: Build all packages
-        run: npm run build
-
       - name: Check for Affected Projects
         id: checkForAffected
-        uses: dkhunt27/action-nx-affected-list@v4
+        uses: 2coo/action-nx-affected@v2
 
       - name: Build matrix
         id: json
