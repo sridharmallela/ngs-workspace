@@ -44,6 +44,8 @@ jobs:
   npm_publish:
     needs: setup
 
+    if: ${{ fromJSON(needs.setup.outputs.projects).length > 0 }}
+
     runs-on: ubuntu-latest
 
     strategy:
@@ -51,11 +53,15 @@ jobs:
         affected: ${{ fromJSON(needs.setup.outputs.projects) }}
 
     steps:
+      - name: Build for "${{ matrix.affected }}"
+        run: |
+          nx build "${{ matrix.affected }}"
+
       - name: Check package version for "${{ matrix.affected }}"
         id: cpv
         uses: PostHog/check-package-version@v2
         with:
-          path: "./packages/${{ matrix.affected }}"
+          path: "${{ github.workspace }}/packages/${{ matrix.affected }}"
 
       - name: Dump affected context for "${{ matrix.affected }}"
         run: echo "${{ steps.cpv.outputs.is-new-version }}"
