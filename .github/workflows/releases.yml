@@ -86,7 +86,8 @@ jobs:
       - name: Dump affected context for "${{ matrix.affected }}"
         run: |
           echo "${{ steps.cpv.outputs.is-new-version }}"
-          ls "${{ github.workspace }}/packages/${{ matrix.affected }}"
+          ls -la "${{ github.workspace }}/packages/${{ matrix.affected }}"
+          ls -la "${{ github.workspace }}/packages/${{ matrix.affected }}/dist"
 
       # - name: Publish new version
       #   if: steps.cpv.outputs.is-new-version == 'true'
