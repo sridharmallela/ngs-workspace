@@ -7,6 +7,7 @@
     "clean": "rimraf \"./coverage\"",
     "commitlint-config": "is-ci || nx build commitlint-config",
     "lint": "nx run-many -t lint",
+    "nx": "nx",
     "postinstall": "npm run commitlint-config && npm run prettier-config",
     "prepare": "is-ci || husky",
     "pretest": "nx build jest-preset",
