@@ -50,7 +50,7 @@ jobs:
         id: affectedMatrix
         run: |
           AFFECTED=${{ toJSON(steps.checkForAffected.outputs.affected) }}
-          HAS_AFFECTED=${{ toJSON(steps.checkForAffected.outputs.hasAffected) }}
+          HAS_AFFECTED=${{ steps.checkForAffected.outputs.hasAffected }}
           echo "projects=${AFFECTED}" >> $GITHUB_OUTPUT
           echo "hasAffected=${HAS_AFFECTED}" >> $GITHUB_OUTPUT
 
@@ -58,8 +58,6 @@ jobs:
         id: tagVersion
         if: steps.checkForAffected.outputs.hasAffected == 'true'
         uses: mydea/action-tag-date-version@v20
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
         if: steps.checkForAffected.outputs.hasAffected == 'true'
