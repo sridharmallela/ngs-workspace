@@ -24,16 +24,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
         run: npm ci
 
       - name: Setup Nx tasks
         uses: nrwl/nx-set-shas@v4
-
-      - name: Build all apps
-        run: npm run build
 
       - name: Check for Affected Projects
         id: checkForAffected
@@ -59,8 +55,23 @@ jobs:
         affected: ${{ fromJSON(needs.setup.outputs.projects) }}
 
     steps:
-      - name: Check out repository
+      - name: Check out repository for "${{ matrix.affected }}"
         uses: actions/checkout@v4
+
+      - name: Setup node 20 for "${{ matrix.affected }}"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install dependencies for "${{ matrix.affected }}"
+        run: npm ci
+
+      - name: Setup Nx tasks for "${{ matrix.affected }}"
+        uses: nrwl/nx-set-shas@v4
+
+      - name: Run build for for "${{ matrix.affected }}"
+        run: nx build ${{ matrix.affected }}
 
       - name: Check package version for "${{ matrix.affected }}"
         id: cpv
@@ -69,7 +80,9 @@ jobs:
           path: "${{ github.workspace }}/packages/${{ matrix.affected }}"
 
       - name: Dump affected context for "${{ matrix.affected }}"
-        run: echo "${{ steps.cpv.outputs.is-new-version }}"
+        run: |
+          echo "${{ steps.cpv.outputs.is-new-version }}"
+          ls "${{ github.workspace }}/packages/${{ matrix.affected }}"
 
       # - name: Publish new version
       #   if: steps.cpv.outputs.is-new-version == 'true'
