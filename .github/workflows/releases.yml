@@ -52,12 +52,14 @@ jobs:
         affected: ${{ fromJSON(needs.setup.outputs.projects) }}
 
     steps:
-      - name: Dump affected context
-        run: echo "${{ matrix.affected }}"
+      - name: Check package version for "${{ matrix.affected }}"
+        id: cpv
+        uses: PostHog/check-package-version@v2
+        with:
+          path: "./packages/${{ matrix.affected }}"
 
-      # - name: Check package version for "${{ matrix.affected }}"
-      #   id: cpv
-      #   uses: PostHog/check-package-version@v2
+      - name: Dump affected context for "${{ matrix.affected }}"
+        run: echo "${{ steps.cpv.outputs.is-new-version }}"
 
       # - name: Publish new version
       #   if: steps.cpv.outputs.is-new-version == 'true'
