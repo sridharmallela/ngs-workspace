@@ -12,6 +12,7 @@ jobs:
 
     outputs:
       projects: ${{ steps.json.outputs.projects }}
+      hasAffected: ${{ steps.json.outputs.hasAffected }}
 
     steps:
       - name: Check out repository
@@ -39,12 +40,14 @@ jobs:
         id: json
         run: |
           AFFECTED=${{ toJSON(steps.checkForAffected.outputs.affected) }}
+          HAS_AFFECTED=${{ toJSON(steps.checkForAffected.outputs.hasAffected) }}
           echo "projects=${AFFECTED}" >> $GITHUB_OUTPUT
+          echo "hasAffected=${HAS_AFFECTED}" >> $GITHUB_OUTPUT
 
   npm_publish:
     needs: setup
 
-    if: ${{ fromJSON(needs.setup.outputs.projects).length > 0 }}
+    if: ${{ needs.setup.outputs.hasAffected }}
 
     runs-on: ubuntu-latest
 
