@@ -15,7 +15,7 @@ jobs:
 
     outputs:
       projects: ${{ steps.affectedMatrix.outputs.projects }}
-      hasAffected: "${{ steps.print-matrix.outputs.hasAffected }}"
+      hasAffected: ${{ steps.print-matrix.outputs.hasAffected }}
 
     steps:
       - name: Check out repository
@@ -69,7 +69,7 @@ jobs:
   npm_publish:
     needs: setup
 
-    if: needs.setup.outputs.hasAffected == 'true'
+    if: ${{ !!needs.setup.outputs.hasAffected }}
 
     runs-on: ubuntu-latest
 
