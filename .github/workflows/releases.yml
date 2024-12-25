@@ -71,7 +71,7 @@ jobs:
         uses: nrwl/nx-set-shas@v4
 
       - name: Run build for for "${{ matrix.affected }}"
-        run: nx build ${{ matrix.affected }}
+        run: npx nx build ${{ matrix.affected }}
 
       - name: Check package version for "${{ matrix.affected }}"
         id: cpv
