@@ -72,9 +72,10 @@ jobs:
 
       - name: Run build for for "${{ matrix.affected }}"
         run: |
-          npx nx build ${{ matrix.affected }}
+          echo "Copying .npmrc && .npmignore"
           cp ${{ github.workspace }}/.npmrc ${{ github.workspace }}/packages/${{ matrix.affected }}
           cp ${{ github.workspace }}/.npmignore ${{ github.workspace }}/packages/${{ matrix.affected }}
+          npx nx build ${{ matrix.affected }}
 
       - name: Check package version for "${{ matrix.affected }}"
         id: cpv
