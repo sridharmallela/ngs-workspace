@@ -25,6 +25,10 @@ jobs:
         with:
           node-version: 20
 
+      - name: Get Previous Tag
+        id: previousTag
+        uses: JinoArch/get-latest-tag@latest
+
       - name: Install dependencies
         run: |
           echo "Running npm install"
@@ -36,6 +40,8 @@ jobs:
       - name: Check for Affected Projects
         id: checkForAffected
         uses: 2coo/action-nx-affected@v2
+        with:
+          base: ${{ steps.previousTag.output.previousTag }}
 
       - name: Print affected matrix
         id: affectedMatrix
@@ -47,13 +53,13 @@ jobs:
 
       - name: Generate new tag version
         id: tagVersion
-        # if: steps.checkForAffected.outputs.hasAffected == 'true'
+        if: steps.checkForAffected.outputs.hasAffected == 'true'
         uses: mydea/action-tag-date-version@v20
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
-        # if: steps.checkForAffected.outputs.hasAffected == 'true'
+        if: steps.checkForAffected.outputs.hasAffected == 'true'
         uses: dev-build-deploy/release-me@v0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
