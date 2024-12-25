@@ -29,6 +29,11 @@ jobs:
       - name: Set Nx tasks
         uses: nrwl/nx-set-shas@v4
 
+      - name: Check Nx exists
+        run: |
+          ls ./node_modules/.bin/nx
+          npm i -g nx
+
       - name: Check for Affected Projects
         id: checkForAffected
         uses: 2coo/action-nx-affected@v2
