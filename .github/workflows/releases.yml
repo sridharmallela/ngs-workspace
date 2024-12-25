@@ -38,19 +38,19 @@ jobs:
       - name: Generate new tag version
         id: version
         if: steps.checkForAffected.outputs.hasAffected == 'true'
-        uses: flynshue/version-action
+        uses: flynshue/version-action@v0
 
       - name: Create Tag
-        uses: piszmog/create-tag@v1
         if: steps.checkForAffected.outputs.hasAffected == 'true'
+        uses: piszmog/create-tag@v1
         with:
           version: "v${{ steps.version.outputs.version }}"
           message: "Release v${{ steps.version.outputs.version }}"
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
-        uses: dev-build-deploy/release-me@v0
         if: steps.checkForAffected.outputs.hasAffected == 'true'
+        uses: dev-build-deploy/release-me@v0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           prefix: v
