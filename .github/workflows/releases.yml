@@ -35,6 +35,27 @@ jobs:
         id: checkForAffected
         uses: 2coo/action-nx-affected@v2
 
+      - name: Generate new tag version
+        id: version
+        if: steps.checkForAffected.outputs.hasAffected == 'true'
+        uses: flynshue/version-action
+
+      - name: Create Tag
+        uses: piszmog/create-tag@v1
+        if: steps.checkForAffected.outputs.hasAffected == 'true'
+        with:
+          version: "v${{ steps.version.outputs.version }}"
+          message: "Release v${{ steps.version.outputs.version }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Release
+        uses: dev-build-deploy/release-me@v0
+        if: steps.checkForAffected.outputs.hasAffected == 'true'
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          prefix: v
+          version: "v${{ steps.version.outputs.version }}"
+
       - name: Print affected matrix
         id: print-matrix
         run: |
@@ -83,30 +104,16 @@ jobs:
         with:
           path: "${{ github.workspace }}/packages/${{ matrix.affected }}"
 
-      - name: Dump affected context for "${{ matrix.affected }}"
-        run: |
-          echo "${{ steps.cpv.outputs.is-new-version }}"
-          ls -la "${{ github.workspace }}/packages/${{ matrix.affected }}"
-          ls -la "${{ github.workspace }}/packages/${{ matrix.affected }}/dist"
-
-      # - name: Publish new version
+      # - name: Publish new version for "${{ matrix.affected }}"
       #   if: steps.cpv.outputs.is-new-version == 'true'
       #   run: npm publish
       #   env:
       #     NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
-      # - name: Create Tag
-      #   uses: piszmog/create-tag@v1
-      #   if: steps.cpv.outputs.is-new-version == 'true'
-      #   with:
-      #     version: "v${{ steps.cpv.outputs.committed-version }}"
-      #     message: "Release v${{ steps.cpv.outputs.committed-version }}"
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-
-      # - name: Create Release
-      #   uses: dev-build-deploy/release-me@v0
-      #   if: steps.cpv.outputs.is-new-version == 'true'
-      #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      #     prefix: v
-      #     version: "v${{ steps.cpv.outputs.committed-version }}"
+      - name: Create Tag for "${{ matrix.affected }}"
+        uses: piszmog/create-tag@v1
+        if: steps.cpv.outputs.is-new-version == 'true'
+        with:
+          version: "${{ matrix.affected }}@v${{ steps.cpv.outputs.committed-version }}"
+          message: "Release ${{ matrix.affected }}@v${{ steps.cpv.outputs.committed-version }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
