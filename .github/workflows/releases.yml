@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      projects: ${{ steps.json.outputs.projects }}
-      hasAffected: ${{ steps.json.outputs.hasAffected }}
+      projects: ${{ steps.print-matrix.outputs.projects }}
+      hasAffected: ${{ steps.print-matrix.outputs.hasAffected }}
 
     steps:
       - name: Check out repository
@@ -29,15 +29,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Set Nx tasks
+      - name: Setup Nx tasks
         uses: nrwl/nx-set-shas@v4
+
+      - name: Build all apps
+        run: npm run build
 
       - name: Check for Affected Projects
         id: checkForAffected
         uses: 2coo/action-nx-affected@v2
 
-      - name: Build matrix
-        id: json
+      - name: Print affected matrix
+        id: print-matrix
         run: |
           AFFECTED=${{ toJSON(steps.checkForAffected.outputs.affected) }}
           HAS_AFFECTED=${{ toJSON(steps.checkForAffected.outputs.hasAffected) }}
@@ -56,10 +59,6 @@ jobs:
         affected: ${{ fromJSON(needs.setup.outputs.projects) }}
 
     steps:
-      - name: Build for "${{ matrix.affected }}"
-        run: |
-          nx build "${{ matrix.affected }}"
-
       - name: Check package version for "${{ matrix.affected }}"
         id: cpv
         uses: PostHog/check-package-version@v2
