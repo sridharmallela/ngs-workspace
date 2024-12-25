@@ -34,7 +34,7 @@ jobs:
 
       - name: Check for Affected Projects
         id: checkForAffected
-        uses: 2coo/action-nx-affected@v1
+        uses: dkhunt27/action-nx-affected-list@v4
 
       - name: Build matrix
         id: json
