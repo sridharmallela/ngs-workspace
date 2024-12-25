@@ -36,16 +36,10 @@ jobs:
         uses: 2coo/action-nx-affected@v2
 
       - name: Generate new tag version
-        id: version
+        id: tags
         if: steps.checkForAffected.outputs.hasAffected == 'true'
-        uses: flynshue/version-action@v0
-
-      - name: Create Tag
-        if: steps.checkForAffected.outputs.hasAffected == 'true'
-        uses: piszmog/create-tag@v1
+        uses: mydea/action-tag-date-version@v20
         with:
-          version: "v${{ steps.version.outputs.version }}"
-          message: "Release v${{ steps.version.outputs.version }}"
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
@@ -54,7 +48,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           prefix: v
-          version: "v${{ steps.version.outputs.version }}"
+          version: "v${{ steps.tags.outputs.version }}"
 
       - name: Print affected matrix
         id: print-matrix
