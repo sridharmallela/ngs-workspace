@@ -69,8 +69,6 @@ jobs:
   npm_publish:
     needs: setup
 
-    if: ${{ !!needs.setup.outputs.hasAffected }}
-
     runs-on: ubuntu-latest
 
     strategy:
