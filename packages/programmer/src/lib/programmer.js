@@ -1,10 +1,34 @@
+/* eslint-disable no-underscore-dangle, no-param-reassign, prefer-rest-params */
+
 'use strict';
 
+// eslint-disable-next-line object-curly-newline
 const { argv, exit, stderr, stdout } = require('node:process');
 const { spawn } = require('node:child_process');
 const { Command } = require('commander');
 
 const com = new Command();
+
+/* istanbul ignore next */
+function around(obj, method, fn) {
+  const old = obj[method];
+  obj[method] = function () {
+    const args = new Array(arguments.length);
+    for (let i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+    return fn.call(this, old, args);
+  };
+}
+
+/* istanbul ignore next */
+function before(obj, method, fn) {
+  const old = obj[method];
+  obj[method] = function () {
+    fn.call(this);
+    old.apply(this, arguments);
+  };
+}
 
 /* istanbul ignore next */
 // AOP around for commander to option missing argument
@@ -49,24 +73,24 @@ Programmer.prototype.promptMessage = msg =>
 // useful to run unit tests on CLI
 // execution absolute path, args array, cb(code, out, err)
 Programmer.prototype.runCommand = (execPath, args, callback) => {
-  let argus = [execPath].concat(args);
-  let exec = argv[0];
-  let stderr = '';
-  let stdout = '';
+  const argus = [execPath].concat(args);
+  const exec = argv[0];
+  let stderr1 = '';
+  let stdout1 = '';
+  function onclose() {
+    callback(null, stdout1, stderr1);
+  }
   const child = spawn(exec, argus, {});
   child.stdout.setEncoding('utf8');
   child.stdout.on('data', str => {
-    stdout += String(str);
+    stdout1 += String(str);
   });
   child.stderr.setEncoding('utf8');
   child.stderr.on('data', str => {
-    stderr += String(str);
+    stderr1 += String(str);
   });
   child.on('close', onclose);
   child.on('error', callback);
-  function onclose() {
-    callback(null, stdout, stderr);
-  }
 };
 
 /**
@@ -75,13 +99,14 @@ Programmer.prototype.runCommand = (execPath, args, callback) => {
 Programmer.prototype.exit = code => {
   function done() {
     /* istanbul ignore next */
+    // eslint-disable-next-line no-use-before-define
     if (!draining--) {
       /* istanbul ignore next */
       exit(code);
     }
   }
   let draining = 0;
-  let streams = [stdout, stderr];
+  const streams = [stdout, stderr];
   this.exited = true;
   streams.forEach(stream => {
     // submit empty write request and wait for completion
@@ -91,26 +116,5 @@ Programmer.prototype.exit = code => {
   done();
 };
 
+// eslint-disable-next-line no-multi-assign
 exports = module.exports = new Programmer();
-
-// ---------- Utility Functions ----------
-/* istanbul ignore next */
-function around(obj, method, fn) {
-  var old = obj[method];
-  obj[method] = function () {
-    var args = new Array(arguments.length);
-    for (var i = 0; i < args.length; i++) {
-      args[i] = arguments[i];
-    }
-    return fn.call(this, old, args);
-  };
-}
-
-/* istanbul ignore next */
-function before(obj, method, fn) {
-  var old = obj[method];
-  obj[method] = function () {
-    fn.call(this);
-    old.apply(this, arguments);
-  };
-}

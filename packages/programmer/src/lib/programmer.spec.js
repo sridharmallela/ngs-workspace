@@ -1,9 +1,11 @@
+/* eslint-disable jest/no-conditional-expect */
+
 'use strict';
 
 const { resolve } = require('node:path');
 const testCandidate = require('./programmer');
 
-describe('lib/programmer --- ', () => {
+describe('lib/programmer ---', () => {
   beforeEach(() => {
     expect(testCandidate).toBeDefined();
     expect(testCandidate.commander).toBeDefined();
@@ -20,7 +22,7 @@ describe('lib/programmer --- ', () => {
   });
 
   test('should test promptMessage', () => {
-    const platform = process.platform;
+    const { platform } = process;
     if (platform !== 'win32') {
       expect(testCandidate.promptMessage()).toContain('    $ ');
       expect(testCandidate.promptMessage('TEST_PROMPT_MESSAGE')).toEqual(
@@ -44,7 +46,7 @@ describe('lib/programmer --- ', () => {
   });
 
   test('should test exit', () => {
-    const exit = process.exit;
+    const { exit } = process;
     Object.defineProperty(process, 'exit', {
       value: code => {
         expect(code).toEqual(0);
@@ -57,6 +59,7 @@ describe('lib/programmer --- ', () => {
     });
   });
 
+  // eslint-disable-next-line jest/no-done-callback
   test('should test runCommand', done => {
     testCandidate.runCommand(
       resolve(`${__dirname}/../../mocks/test-script`),

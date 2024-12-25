@@ -23,18 +23,50 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nx/typescript"],
-      "rules": {}
+      "extends": [
+        "plugin:@nx/typescript",
+        "airbnb-base",
+        "airbnb-typescript/base"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.base.json"
+      },
+      "rules": {
+        "@typescript-eslint/comma-dangle": "off",
+        "@typescript-eslint/indent": "off",
+        "arrow-parens": "off",
+        "comma-dangle": "off",
+        "implicit-arrow-linebreak": "off",
+        "import/prefer-default-export": "off",
+        "linebreak-style": "off",
+        "no-plusplus": "off",
+        "operator-linebreak": "off",
+        "yoda": "off"
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nx/javascript"],
-      "rules": {}
+      "extends": ["plugin:@nx/javascript", "airbnb-base"],
+      "rules": {
+        "arrow-parens": "off",
+        "comma-dangle": "off",
+        "implicit-arrow-linebreak": "off",
+        "linebreak-style": "off",
+        "no-plusplus": "off",
+        "operator-linebreak": "off",
+        "strict": "off",
+        "yoda": "off"
+      }
     },
     {
       "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
+      "extends": ["plugin:jest/recommended"],
       "env": { "jest": true },
-      "rules": {}
+      "rules": {
+        "arrow-parens": "off",
+        "import/first": "off",
+        "jest/no-standalone-expect": "off"
+      }
     }
   ]
 }
