@@ -37,3 +37,13 @@ bin/.gitkeep
 .prettierrc
 .prettierignore
 jest.config.js
+src
+eslintrc.json
+jest.config.ts
+project.json
+README.md
+tsconfig.json
+tsconfig.lib.json
+tsconfig.spec.json
+assets
+mocks
