@@ -15,7 +15,7 @@ jobs:
 
     outputs:
       projects: ${{ steps.affectedMatrix.outputs.projects }}
-      hasAffected: ${{ steps.print-matrix.outputs.hasAffected }}
+      hasAffected: "${{ steps.print-matrix.outputs.hasAffected }}"
 
     steps:
       - name: Check out repository
