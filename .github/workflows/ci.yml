@@ -15,22 +15,21 @@ jobs:
         node-version: [18.x, 20.x, 22.x]
 
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-          with:
-            fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+      uses: actions/setup-node@v4
           with:
             node-version: ${{ matrix.node-version }}
             cache: "npm"
 
       - name: Set Nx tasks ${{ matrix.node-version }}
-        uses: nrwl/nx-set-shas@v4
+      uses: nrwl/nx-set-shas@v4
 
       - name: Install dependencies for ${{ matrix.node-version }}
-        run: npm ci
+      run: npm ci
 
       - name: Run execution tasks for ${{ matrix.node-version }}
-        run: npm run validate
+      run: npm run validate
