@@ -29,9 +29,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build all packages
-        run: npm run build
-
       - name: Check for Affected Projects
         id: checkForAffected
         uses: dkhunt27/action-nx-affected-list@v4
