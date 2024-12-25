@@ -41,7 +41,7 @@ jobs:
         id: checkForAffected
         uses: 2coo/action-nx-affected@v2
         with:
-          base: ${{ steps.previousTag.output.previousTag }}
+          base: ${{ steps.previousTag.output.latestTag }}
 
       - name: Print affected matrix
         id: affectedMatrix
@@ -63,8 +63,7 @@ jobs:
         uses: dev-build-deploy/release-me@v0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          prefix: v
-          version: "v${{ steps.tagVersion.outputs.version }}"
+          version: "${{ steps.tagVersion.outputs.version }}"
 
   npm_publish:
     needs: setup
