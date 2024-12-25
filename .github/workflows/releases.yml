@@ -1,17 +1,17 @@
 name: Package Publish
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 permissions:
   contents: write
   actions: write
 
 jobs:
-  publish-npm:
+  setup:
     runs-on: ubuntu-latest
+
+    outputs:
+      projects: ${{ steps.json.outputs.projects }}
 
     steps:
       - name: Check out repository
@@ -32,28 +32,51 @@ jobs:
       - name: Build all packages
         run: npm run build
 
-      - name: Check package version
-        id: cpv
-        uses: PostHog/check-package-version@v2
+      - name: Check for Affected Projects
+        id: checkForAffected
+        uses: 2coo/action-nx-affected@v1
 
-      - name: Publish new version
-        if: steps.cpv.outputs.is-new-version == 'true'
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - name: Build matrix
+        id: json
+        run: |
+          AFFECTED=${{ toJSON(steps.checkForAffected.outputs.affected) }}
+          echo "projects=${AFFECTED}" >> $GITHUB_OUTPUT
 
-      - name: Create Tag
-        uses: piszmog/create-tag@v1
-        if: steps.cpv.outputs.is-new-version == 'true'
-        with:
-          version: "v${{ steps.cpv.outputs.committed-version }}"
-          message: "Release v${{ steps.cpv.outputs.committed-version }}"
-          token: ${{ secrets.GITHUB_TOKEN }}
+  npm_publish:
+    needs: setup
 
-      - name: Create Release
-        uses: dev-build-deploy/release-me@v0
-        if: steps.cpv.outputs.is-new-version == 'true'
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          prefix: v
-          version: "v${{ steps.cpv.outputs.committed-version }}"
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        affected: ${{ fromJSON(needs.setup.outputs.projects) }}
+
+    steps:
+      - name: Dump affected context
+        run: echo "${{ matrix.affected }}"
+
+      # - name: Check package version for "${{ matrix.affected }}"
+      #   id: cpv
+      #   uses: PostHog/check-package-version@v2
+
+      # - name: Publish new version
+      #   if: steps.cpv.outputs.is-new-version == 'true'
+      #   run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+
+      # - name: Create Tag
+      #   uses: piszmog/create-tag@v1
+      #   if: steps.cpv.outputs.is-new-version == 'true'
+      #   with:
+      #     version: "v${{ steps.cpv.outputs.committed-version }}"
+      #     message: "Release v${{ steps.cpv.outputs.committed-version }}"
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Create Release
+      #   uses: dev-build-deploy/release-me@v0
+      #   if: steps.cpv.outputs.is-new-version == 'true'
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     prefix: v
+      #     version: "v${{ steps.cpv.outputs.committed-version }}"

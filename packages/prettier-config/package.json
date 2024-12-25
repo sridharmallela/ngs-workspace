@@ -5,14 +5,14 @@
   "author": "Sridhar Mallela",
   "license": "MIT",
   "private": true,
-  "homepage": "https://sridharmallela.github.io/my-workspace/packages/configs/prettier/",
+  "homepage": "https://sridharmallela.github.io/my-workspace/packages/prettier-config/",
   "type": "module",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sridharmallela/my-workspace.git",
-    "directory": "packages/configs/prettier"
+    "directory": "packages/prettier-config"
   },
   "bugs": {
     "url": "https://github.com/sridharmallela/my-workspace/issues"

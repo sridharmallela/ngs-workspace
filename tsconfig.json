@@ -13,13 +13,13 @@
       "path": "./packages/versions-checker"
     },
     {
-      "path": "./packages/configs/commitlint"
-    },
-    {
-      "path": "./packages/configs/prettier"
-    },
-    {
       "path": "./packages/jest-preset"
+    },
+    {
+      "path": "./packages/commitlint-config"
+    },
+    {
+      "path": "./packages/prettier-config"
     }
   ]
 }

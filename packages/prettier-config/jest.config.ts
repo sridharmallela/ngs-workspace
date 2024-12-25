@@ -1,10 +1,10 @@
 export default {
-  displayName: 'commitlint',
-  preset: './../../../jest.preset.cjs',
+  displayName: 'prettier-config',
+  preset: './../../jest.preset.cjs',
   testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }]
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: './../../../coverage/commitlint'
+  coverageDirectory: './../../coverage/prettier-config'
 };

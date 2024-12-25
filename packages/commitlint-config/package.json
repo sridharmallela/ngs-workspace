@@ -5,14 +5,14 @@
   "author": "Sridhar Mallela",
   "license": "MIT",
   "private": true,
-  "homepage": "https://sridharmallela.github.io/my-workspace/packages/configs/commitlint/",
+  "homepage": "https://sridharmallela.github.io/my-workspace/packages/commitlint-config/",
   "type": "module",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sridharmallela/my-workspace.git",
-    "directory": "packages/configs/commitlint"
+    "directory": "packages/commitlint-config"
   },
   "bugs": {
     "url": "https://github.com/sridharmallela/my-workspace/issues"
