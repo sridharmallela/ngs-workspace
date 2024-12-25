@@ -71,7 +71,7 @@ jobs:
   npm_publish:
     needs: setup
 
-    if: ${{ needs.setup.outputs.hasAffected }}
+    if: needs.setup.outputs.hasAffected == 'true'
 
     runs-on: ubuntu-latest
 
