@@ -5,7 +5,6 @@
   "author": "Sridhar Mallela",
   "license": "MIT",
   "homepage": "https://sridharmallela.github.io/my-workspace/packages/versions-checker/",
-  "private": true,
   "type": "commonjs",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",

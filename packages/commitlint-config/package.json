@@ -4,7 +4,6 @@
   "description": "Commitlint configs for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
-  "private": true,
   "homepage": "https://sridharmallela.github.io/my-workspace/packages/commitlint-config/",
   "type": "module",
   "main": "./dist/index.js",

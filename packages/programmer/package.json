@@ -4,7 +4,6 @@
   "description": "Programmer AOP for commander",
   "author": "Sridhar Mallela",
   "license": "MIT",
-  "private": true,
   "homepage": "https://sridharmallela.github.io/my-workspace/packages/programmer/",
   "type": "commonjs",
   "main": "./dist/index.js",

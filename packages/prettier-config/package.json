@@ -4,7 +4,6 @@
   "description": "prettier configs for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
-  "private": true,
   "homepage": "https://sridharmallela.github.io/my-workspace/packages/prettier-config/",
   "type": "module",
   "main": "./dist/index.js",
