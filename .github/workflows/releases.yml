@@ -13,10 +13,6 @@ jobs:
   setup:
     runs-on: ubuntu-latest
 
-    outputs:
-      projects: ${{ steps.affectedMatrix.outputs.projects }}
-      hasAffected: ${{ steps.print-matrix.outputs.hasAffected }}
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -28,10 +24,6 @@ jobs:
         with:
           node-version: 20
 
-      - name: Get Previous Tag
-        id: previousTag
-        uses: JinoArch/get-latest-tag@latest
-
       - name: Install dependencies
         run: |
           echo "Running npm install"
@@ -40,85 +32,38 @@ jobs:
       - name: Setup Nx tasks
         uses: nrwl/nx-set-shas@v4
 
+      - name: Run execution tasks
+        run: npm run validate
+
+      - name: Get last tag for comparision
+        id: gitTag
+        uses: ./.github/actions/git-tags
+
       - name: Check for Affected Projects
         id: checkForAffected
         uses: 2coo/action-nx-affected@v2
         with:
-          base: ${{ steps.previousTag.output.latestTag }}
+          base: ${{ steps.gitTag.output.currentTag }}
 
-      - name: Print affected matrix
-        id: affectedMatrix
-        run: |
-          AFFECTED=${{ toJSON(steps.checkForAffected.outputs.affected) }}
-          HAS_AFFECTED=${{ steps.checkForAffected.outputs.hasAffected }}
-          echo "projects=${AFFECTED}" >> $GITHUB_OUTPUT
-          echo "hasAffected=${HAS_AFFECTED}" >> $GITHUB_OUTPUT
-
-      - name: Generate new tag version
-        id: tagVersion
+      - name: Publish Affected Projects
         if: steps.checkForAffected.outputs.hasAffected == 'true'
-        uses: mydea/action-tag-date-version@v20
+        uses: ./.github/actions/nx-publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+        with:
+          affectedProjects: ${{ steps.checkForAffected.outputs.affected }}
+
+      - name: Create Tag
+        uses: piszmog/create-tag@v1
+        if: steps.checkForAffected.outputs.hasAffected == 'true'
+        with:
+          version: "${{ steps.gitTag.output.nextTag }}"
+          message: "Release ${{ steps.gitTag.output.nextTag }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
         if: steps.checkForAffected.outputs.hasAffected == 'true'
         uses: dev-build-deploy/release-me@v0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          version: "${{ steps.tagVersion.outputs.version }}"
-
-  npm_publish:
-    needs: setup
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        affected: ${{ fromJSON(needs.setup.outputs.projects) }}
-
-    steps:
-      - name: Check out repository for "${{ matrix.affected }}"
-        uses: actions/checkout@v4
-
-      - name: Setup node 20 for "${{ matrix.affected }}"
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
-
-      - name: Install dependencies for "${{ matrix.affected }}"
-        run: |
-          echo "Running npm install"
-          npm ci
-
-      - name: Setup Nx tasks for "${{ matrix.affected }}"
-        uses: nrwl/nx-set-shas@v4
-
-      - name: Run build for for "${{ matrix.affected }}"
-        run: |
-          echo "Copying .npmrc && .npmignore"
-          cp ${{ github.workspace }}/.npmrc ${{ github.workspace }}/packages/${{ matrix.affected }}
-          cp ${{ github.workspace }}/.npmignore ${{ github.workspace }}/packages/${{ matrix.affected }}
-          npx nx build ${{ matrix.affected }}
-
-      - name: Check package version for "${{ matrix.affected }}"
-        id: cpv
-        uses: PostHog/check-package-version@v2
-        with:
-          path: "${{ github.workspace }}/packages/${{ matrix.affected }}"
-
-      - name: Publish new version for "${{ matrix.affected }}"
-        if: steps.cpv.outputs.is-new-version == 'true'
-        run: |
-          cd ${{ github.workspace }}/packages/${{ matrix.affected }}
-          npm publish
-          cd ${{ github.workspace }}
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-
-      - name: Create Tag for "${{ matrix.affected }}"
-        if: steps.cpv.outputs.is-new-version == 'true'
-        uses: piszmog/create-tag@v1
-        with:
-          version: "${{ matrix.affected }}@v${{ steps.cpv.outputs.committed-version }}"
-          message: "Release ${{ matrix.affected }}@v${{ steps.cpv.outputs.committed-version }}"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          version: "${{ steps.gitTag.output.nextTag }}"

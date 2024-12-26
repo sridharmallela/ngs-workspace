@@ -1,0 +1,12 @@
+name: Git Tags
+description: Generate Tag and retrieves current Tag
+
+outputs:
+  currentTag:
+    description: Current tag from repository
+  nextTag:
+    description: Generates new tag that will be pushed for the current changes
+
+runs:
+  using: node20
+  main: ./index.mjs

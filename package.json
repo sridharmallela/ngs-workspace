@@ -20,6 +20,8 @@
     "packages/**"
   ],
   "devDependencies": {
+    "@actions/core": "~1.11.1",
+    "@actions/github": "~6.0.0",
     "@commitlint/cli": "~19.6.1",
     "@commitlint/config-nx-scopes": "~19.5.0",
     "@commitlint/types": "~19.5.0",
