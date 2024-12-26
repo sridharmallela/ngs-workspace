@@ -40,12 +40,8 @@ try {
       debug(`${proj} >> copying ".npmrc", ".npmignore"`);
       execSync(`cp ${workspace}/.npmrc ${projPath}`);
       execSync(`cp ${workspace}/.npmignore ${projPath}`);
-      debug(`${proj} >> Executing "cd ${projPath}"`);
-      execSync(`cd ${projPath}`);
-      debug(`${proj} >> Executing "npm publish"`);
-      execSync(`npm publish --access public`);
-      execSync(`cd ${workspace}`);
-      debug(`${proj} >> Executing "cd ${workspace}"`);
+      debug(`${proj} >> Executing "cd ${projPath} && npm publish"`);
+      execSync(`cd ${projPath} && npm publish --access public`);
       log(`Completed npm publish for ${proj} and tag is v${pkgTag}`);
       tags.push(`${proj}@${pkgTag}`);
     } else {
