@@ -67,4 +67,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: ${{ steps.gitTag.outputs.nextTag }}
           versioning: calver
-          release-notes: "## What's Changed\n\n**Full Changelog**: https://github.com/sridharmallela/my-workspace/compare/${{ steps.gitTag.outputs.currentTag }}...${{ steps.gitTag.outputs.nextTag }}"
