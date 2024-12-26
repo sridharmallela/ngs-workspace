@@ -21,6 +21,7 @@ const getPackageInfo = filePath => {
 };
 
 try {
+  log(process.env.NPM_AUTH_TOKEN);
   const tags = [];
   const workspace = getInput('homeDir');
   debug(`CWD: ${workspace}`);
@@ -42,7 +43,7 @@ try {
       debug(`${proj} >> Executing "cd ${projPath}"`);
       execSync(`cd ${projPath}`);
       debug(`${proj} >> Executing "npm publish"`);
-      execSync(`npm publish`);
+      execSync(`npm publish --access public`);
       execSync(`cd ${workspace}`);
       debug(`${proj} >> Executing "cd ${workspace}"`);
       log(`Completed npm publish for ${proj} and tag is v${pkgTag}`);

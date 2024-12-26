@@ -10,7 +10,7 @@ permissions:
   actions: write
 
 jobs:
-  setup:
+  npm_publish:
     runs-on: ubuntu-latest
 
     steps:
@@ -50,6 +50,7 @@ jobs:
         uses: ./.github/actions/nx-publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NPM_AUTH_TOKEN: ${{secrets.npm_token}}
         with:
           affectedProjects: ${{ steps.checkForAffected.outputs.affected }}
 
