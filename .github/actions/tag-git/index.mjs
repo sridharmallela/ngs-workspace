@@ -17,20 +17,20 @@ try {
   debug(`Completed create tag for github > ${status}`);
   if (status !== 201) {
     setFailed(`Failed to create tag object (status=${status})`);
-    return;
+  } else {
+    debug(`executing create ref for github`);
+    const { status: refStatus } = await client.rest.git.createRef({
+      ...context.repo,
+      ref: `refs/tags/${tag}`,
+      sha: data.sha
+    });
+    debug(`Completed create ref for github > ${refStatus}`);
+    if (refStatus !== 201) {
+      setFailed(`Failed to create tag ref(status = ${refStatus})`);
+    } else {
+      info(`Tagged ${data.sha} as ${tag}`);
+    }
   }
-  debug(`executing create ref for github`);
-  const { status: refStatus } = await client.rest.git.createRef({
-    ...context.repo,
-    ref: `refs/tags/${tag}`,
-    sha: data.sha
-  });
-  debug(`Completed create ref for github > ${refStatus}`);
-  if (refStatus !== 201) {
-    setFailed(`Failed to create tag ref(status = ${refStatus})`);
-    return;
-  }
-  info(`Tagged ${data.sha} as ${tag}`);
 } catch (err) {
   setFailed(err);
 }
