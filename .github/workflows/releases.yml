@@ -49,10 +49,10 @@ jobs:
         if: steps.checkForAffected.outputs.hasAffected == 'true'
         uses: ./.github/actions/nx-publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
           NPM_AUTH_TOKEN: ${{secrets.npm_token}}
         with:
           affectedProjects: ${{ steps.checkForAffected.outputs.affected }}
+          npmToken: ${{secrets.npm_token}}
 
       - name: Create Tag
         uses: piszmog/create-tag@v1

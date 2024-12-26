@@ -5,6 +5,9 @@ inputs:
   affectedProjects:
     description: affected array of projects
     required: true
+  npmToken:
+    description: affected array of projects
+    required: true
   homeDir:
     description: affected array of projects
     default: ${{ github.workspace }}

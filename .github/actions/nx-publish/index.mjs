@@ -21,7 +21,7 @@ const getPackageInfo = filePath => {
 };
 
 try {
-  log(process.env.NPM_AUTH_TOKEN);
+  log(getInput('npmToken'));
   const tags = [];
   const workspace = getInput('homeDir');
   debug(`CWD: ${workspace}`);
@@ -40,7 +40,6 @@ try {
       log(`${proj} >> copying ".npmrc", ".npmignore"`);
       execSync(`cp ${workspace}/.npmrc ${projPath}`);
       execSync(`cp ${workspace}/.npmignore ${projPath}`);
-      log(readFileSync(`${projPath}/.npmrc`).toString());
       debug(`${proj} >> Executing "cd ${projPath} && npm publish"`);
       execSync(`cd ${projPath} && npm publish`);
       log(`Completed npm publish for ${proj} and tag is v${pkgTag}`);
