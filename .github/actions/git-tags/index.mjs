@@ -1,5 +1,4 @@
-import { setOutput, setFailed, debug } from '@actions/core';
-import { error, log } from 'node:console';
+import { setOutput, setFailed, debug, info } from '@actions/core';
 
 import { execSync } from 'node:child_process';
 
@@ -25,10 +24,9 @@ try {
   }
   const nextTag = `${dateTag}.${next}`;
   debug(`nextTag:${nextTag}`);
-  log(`currentTag:${currentTag} && nextTag:${nextTag}`);
+  info(`currentTag:${currentTag} && nextTag:${nextTag}`);
   setOutput('currentTag', currentTag);
   setOutput('nextTag', nextTag);
 } catch (err) {
-  error(`error occurred ${err}`);
   setFailed(err);
 }

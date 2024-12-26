@@ -1,0 +1,14 @@
+name: Tag Github
+description: Tag github based on the release
+
+outputs:
+  token:
+    description: Github Token
+    required: true
+  version:
+    description: "Version (e.g. v0.1.0)"
+    required: true
+
+runs:
+  using: node20
+  main: ./index.mjs

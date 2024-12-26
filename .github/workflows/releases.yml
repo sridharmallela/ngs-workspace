@@ -52,14 +52,12 @@ jobs:
           NPM_AUTH_TOKEN: ${{secrets.npm_token}}
         with:
           affectedProjects: ${{ steps.checkForAffected.outputs.affected }}
-          npmToken: ${{secrets.npm_token}}
 
       - name: Create Tag
-        uses: piszmog/create-tag@v1
+        uses: ./.github/actions/tag-git
         if: steps.checkForAffected.outputs.hasAffected == 'true'
         with:
           version: "${{ steps.gitTag.output.nextTag }}"
-          message: "Release ${{ steps.gitTag.output.nextTag }}"
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
