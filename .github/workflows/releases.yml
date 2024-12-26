@@ -43,7 +43,7 @@ jobs:
         id: checkForAffected
         uses: 2coo/action-nx-affected@v2
         with:
-          base: ${{ steps.gitTag.output.currentTag }}
+          base: ${{ steps.gitTag.outputs.currentTag }}
 
       - name: Publish Affected Projects
         if: steps.checkForAffected.outputs.hasAffected == 'true'
@@ -57,7 +57,7 @@ jobs:
         uses: ./.github/actions/tag-git
         if: steps.checkForAffected.outputs.hasAffected == 'true'
         with:
-          version: "${{ steps.gitTag.output.nextTag }}"
+          version: ${{ steps.gitTag.outputs.nextTag }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
@@ -65,4 +65,4 @@ jobs:
         uses: dev-build-deploy/release-me@v0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          version: "${{ steps.gitTag.output.nextTag }}"
+          version: ${{ steps.gitTag.outputs.nextTag }}
