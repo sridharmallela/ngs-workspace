@@ -1,10 +1,6 @@
-<a id="markdown-programmer" name="programmer"></a>
-
 # Programmer
 
 [![npm](https://img.shields.io/npm/v/programmer.svg?style=plastic)](https://www.npmjs.com/package/programmer) [![npm](https://img.shields.io/npm/dw/programmer.svg?style=plastic)](https://www.npmjs.com/package/programmer) [![npm](https://img.shields.io/npm/dm/programmer.svg?style=plastic)](https://www.npmjs.com/package/programmer) [![npm](https://img.shields.io/npm/dy/programmer.svg?style=plastic)](https://www.npmjs.com/package/programmer) [![npm](https://img.shields.io/npm/dt/programmer.svg?style=plastic)](https://www.npmjs.com/package/programmer)
-
-<a id="markdown-table-of-contents" name="table-of-contents"></a>
 
 ## Table of Contents
 
@@ -18,27 +14,21 @@
 
 <!-- /TOC -->
 
-<a id="markdown-installation" name="installation"></a>
-
 ## Installation
 
 ```bash
   $ npm i --save programmer
 ```
 
-<a id="markdown-usage" name="usage"></a>
-
 ## Usage
 
 ```js
-var programmer = require('programmer');
+const programmer = require('programmer');
 ```
 
 ```ts
 import { commander } from 'programmer';
 ```
-
-<a id="markdown-license" name="license"></a>
 
 ## License
 
