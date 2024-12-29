@@ -6,7 +6,8 @@
     "outDir": "./dist",
     "tsBuildInfoFile": "./out-tsc/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
-    "types": ["node"]
+    "types": ["node"],
+    "resolveJsonModule": true
   },
   "include": ["src/**/*.ts"],
   "references": [],

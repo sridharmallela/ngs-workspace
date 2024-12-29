@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-smallela",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Commitlint configs for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",

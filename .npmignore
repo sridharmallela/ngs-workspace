@@ -21,8 +21,6 @@ npm-debug.log
 ## project specific
 # test folder
 test
-# src folder
-lib
 # other files
 _config.yml
 .editorconfig
