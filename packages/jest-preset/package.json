@@ -1,12 +1,12 @@
 {
   "name": "jest-preset-smallela",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "jest preset for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
   "homepage": "https://sridharmallela.github.io/my-workspace/packages/jest-preset/",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./jest-preset.cjs",
   "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 jest.mock('is-ci', () => false);
 
-import { JEST_CONFIG_SMALLELA } from './jest-preset.js';
+import { JEST_CONFIG_SMALLELA } from './preset-rules.js';
 
 describe('Prettier Config ---', () => {
   test('for valid', () => {
