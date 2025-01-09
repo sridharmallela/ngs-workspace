@@ -39,6 +39,7 @@ module.exports = {
     }
   },
   errorOnDeprecated: true,
+  moduleFileExtensions: ['js', 'cjs', 'mjs', 'json', 'ts'],
   slowTestThreshold: 5,
   testTimeout: 20000,
   testEnvironment: 'node',

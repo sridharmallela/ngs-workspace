@@ -17,10 +17,11 @@ describe('Prettier Config ---', () => {
         '/node_modules/',
         '(.*)\\.d.ts',
         'index.[jt]s',
+        'main.[jt]s',
         'jest.config.ts',
         'test-setup.ts'
       ],
-      coverageReporters: ['text', 'html'],
+      coverageReporters: ['html', 'json', 'text'],
       coverageThreshold: {
         '**/*': {
           branches: 100,
@@ -36,16 +37,21 @@ describe('Prettier Config ---', () => {
         }
       },
       errorOnDeprecated: true,
+      moduleFileExtensions: ['js', 'cjs', 'mjs', 'json', 'ts'],
       slowTestThreshold: 5,
       testEnvironment: 'node',
       testMatch: ['**/?(*.)+(spec|test|e2e).[tj]s?(x)'],
       testPathIgnorePatterns: [
         '/coverage/',
         '/dist/',
+        '/e2e/',
         '/generated/',
         '/node_modules/'
       ],
       testTimeout: 20000,
+      transform: {
+        '^.+\\.[tj]s$': 'ts-jest'
+      },
       transformIgnorePatterns: [
         'node_modules/(?!@commitlint|prettier|.*\\.mjs)'
       ],

@@ -14,13 +14,14 @@ const JEST_CONFIG_SMALLELA = {
     '/node_modules/',
     '(.*)\\.d.ts',
     'index.[jt]s',
+    'main.[jt]s',
     'jest.config.ts',
     'test-setup.ts'
   ],
   coverageReporters: isCI
     ? /* istanbul ignore next */
       ['json', 'text', 'lcovonly', 'cobertura']
-    : ['text', 'html'],
+    : ['html', 'json', 'text'],
   coverageThreshold: {
     global: {
       branches: 100,
@@ -36,6 +37,7 @@ const JEST_CONFIG_SMALLELA = {
     }
   },
   errorOnDeprecated: true,
+  moduleFileExtensions: ['js', 'cjs', 'mjs', 'json', 'ts'],
   slowTestThreshold: 5,
   testTimeout: 20000,
   testEnvironment: 'node',
@@ -43,9 +45,13 @@ const JEST_CONFIG_SMALLELA = {
   testPathIgnorePatterns: [
     '/coverage/',
     '/dist/',
+    '/e2e/',
     '/generated/',
     '/node_modules/'
   ],
+  transform: {
+    '^.+\\.[tj]s$': 'ts-jest'
+  },
   transformIgnorePatterns: [`node_modules/(?!${esModules}|.*\\.mjs)`],
   verbose: true
 };
