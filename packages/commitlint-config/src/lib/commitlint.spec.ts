@@ -1,4 +1,4 @@
-import testCandidate from './commitlint.js';
+import { DEFAULT_CONFIG as testCandidate } from './commitlint.js';
 
 describe('CommitLint Config ---', () => {
   beforeEach(() => {

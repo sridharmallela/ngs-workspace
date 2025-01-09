@@ -1,7 +1,7 @@
 import type { UserConfig } from '@commitlint/types';
 
 // https://github.com/conventional-changelog/commitlint/blob/master/docs/reference/rules.md
-export default {
+export const DEFAULT_CONFIG = {
   rules: {
     'body-case': [2, 'always', ['sentence-case', 'lower-case']],
     'body-empty': [2, 'always'],
