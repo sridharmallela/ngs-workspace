@@ -17,6 +17,7 @@ module.exports = {
     '(.*)\\.d.ts',
     'index.[jt]s',
     'jest.config.ts',
+    'jest.preset.cjs',
     'test-setup.ts'
   ],
   coverageReporters: isCI

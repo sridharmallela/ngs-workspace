@@ -39,7 +39,7 @@ jest.config.js
 *.ts.map
 README.md
 assets
-eslintrc.json
+.eslintrc.json
 mocks
 out-tsc
 project.json
