@@ -1,6 +1,6 @@
 {
   "name": "programmer",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "Programmer AOP for commander",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -21,6 +21,6 @@
   },
   "keywords": [],
   "dependencies": {
-    "commander": "12.1.0"
+    "commander": "~13.0.0"
   }
 }
