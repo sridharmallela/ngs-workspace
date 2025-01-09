@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "name": "Workspace Validate",
+      "autoAttachChildProcesses": true,
+      "console": "integratedTerminal",
+      "runtimeExecutable": "npm",
+      "request": "launch",
+      "runtimeArgs": ["run-script", "validate"],
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+  ]
+}

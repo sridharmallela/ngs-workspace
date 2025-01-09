@@ -1,25 +1,40 @@
-### ISSUE
+<!--- Provide a general summary of the issue in the Title above -->
 
-- **I'm submitting a ... **
+## Expected Behavior
 
-  - [ ] bug report
-  - [ ] feature request
-  - [ ] support request
+<!--- If you're describing a bug, tell us what should happen -->
+<!--- If you're suggesting a change/improvement, tell us how it should work -->
 
-- **Do you want to request a _feature_ or report a _bug_?**
+## Current Behavior
 
-- **What is the current behavior?**
+<!--- If describing a bug, tell us what happens instead of the expected behavior -->
+<!--- If suggesting a change/improvement, explain the difference from expected behavior -->
 
-- **If the current behavior is a bug, please provide the steps to reproduce and if possible screenshots of problem**
+## Possible Solution
 
-- **What is the expected behavior?**
+<!--- Not obligatory, but suggest a fix/reason for the bug, -->
+<!--- or ideas how to implement the addition or change -->
 
-- **What is the use case for changing the behavior?**
+## Steps to Reproduce (for bugs)
 
-- **Please tell us about your environment:**
+<!--- Provide a link to a live example, or an unambiguous set of steps to -->
+<!--- reproduce this bug. Include code to reproduce, if relevant -->
 
-* version: 1.x.x
-* Browser: [all | Chrome XX | Firefox XX | IE XX | Safari XX | Mobile Chrome XX | Android X.X Web Browser | iOS XX Safari | iOS XX UIWebView | iOS XX WKWebView ]
-* Language: [all | TypeScript X.X | ES6/7 | ES5]
+1.
+2.
+3.
+4.
 
-- **Other information** (e.g. detailed explanation, stacktraces, related issues, suggestions how to fix, links for us to have context, eg. stackoverflow, etc)
+## Context
+
+<!--- How has this issue affected you? What are you trying to accomplish? -->
+<!--- Providing context helps us come up with a solution that is most useful in the real world -->
+
+## Your Environment
+
+<!--- Include as many relevant details about the environment you experienced the bug in -->
+
+- Version used:
+- Browser name and version:
+- Operating System and version (desktop or mobile):
+- Link to your project:

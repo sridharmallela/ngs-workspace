@@ -1,10 +1,14 @@
-name: Deploy GitHub Pages
+name: Deploy Documentation
 
 on:
   push:
-    branches: ["main"]
+    paths-ignore:
+      - ".github/**"
+      - ".husky/**"
+      - ".vscode/**"
 
-  workflow_dispatch:
+    branches:
+      - main
 
 permissions:
   contents: read

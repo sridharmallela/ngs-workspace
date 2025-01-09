@@ -2,6 +2,12 @@ name: Package Publish
 
 on:
   push:
+    paths-ignore:
+      - ".github/**"
+      - ".husky/**"
+      - ".vscode/**"
+      - "resources/**"
+
     branches:
       - main
 

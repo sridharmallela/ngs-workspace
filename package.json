@@ -2,10 +2,16 @@
   "name": "@smallela/source",
   "version": "1.0.0",
   "license": "MIT",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/**"
+  ],
   "scripts": {
     "build": "nx run-many -t build",
     "clean": "rimraf \"./coverage\"",
     "commitlint-config": "is-ci || nx build commitlint-config",
+    "format": "prettier --write",
     "lint": "nx run-many -t lint",
     "postinstall": "npm run commitlint-config && npm run prettier-config",
     "prepare": "is-ci || husky",
@@ -14,11 +20,6 @@
     "test": "nx run-many -t test",
     "validate": "npm run clean && npm run lint && npm test && npm run build"
   },
-  "private": true,
-  "type": "module",
-  "workspaces": [
-    "packages/**"
-  ],
   "devDependencies": {
     "@actions/core": "~1.11.1",
     "@actions/github": "~6.0.0",
@@ -41,6 +42,8 @@
     "colors": "~1.4.0",
     "commander": "~13.0.0",
     "commitlint-config-smallela": "file:./packages/commitlint-config",
+    "cross-env": "~7.0.3",
+    "dotenv": "~16.4.7",
     "eslint": "~8.57.1",
     "eslint-config-airbnb-base": "~15.0.0",
     "eslint-config-airbnb-typescript": "~18.0.0",
@@ -59,6 +62,7 @@
     "rimraf": "~6.0.1",
     "semver": "~7.6.3",
     "ts-jest": "~29.2.5",
+    "ts-loader": "~9.5.1",
     "ts-node": "~10.9.2",
     "tslib": "~2.8.1",
     "typescript": "~5.6.3"

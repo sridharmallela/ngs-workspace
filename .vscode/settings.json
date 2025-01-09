@@ -8,37 +8,24 @@
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": false
   },
-  "breadcrumbs.enabled": false,
   "diffEditor.ignoreTrimWhitespace": true,
-  "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.codeLens": false,
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorWidth": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.dragAndDrop": false,
-  "editor.emptySelectionClipboard": false,
-  "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
-  "editor.minimap.enabled": false,
   "editor.rulers": [80],
-  "editor.scrollBeyondLastLine": false,
-  "editor.stickyScroll.enabled": false,
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "errorLens.fontStyleItalic": true,
-  "errorLens.gutterIconSet": "defaultOutline",
-  "eslint.autoFixOnSave": true,
   "eslint.run": "onSave",
   "eslint.validate": [
     "javascript",
@@ -50,11 +37,6 @@
     "json",
     "jsonc"
   ],
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.enableDragAndDrop": false,
-  "explorer.openEditors.visible": 15,
-  "extensions.ignoreRecommendations": true,
   "files.associations": {
     ".eslintrc": "json",
     ".prettierrc": "json"
@@ -95,16 +77,6 @@
   "todo-tree.general.tags": ["FIX-ME", "TODO", "// //", "NOTE"],
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.commandCenter": false,
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootPath}${separator}",
-  "window.zoomLevel": 0.75,
-  "workbench.commandPalette.history": 0,
-  "workbench.editor.closeOnFileDelete": true,
-  "workbench.layoutControl.enabled": false,
-  "workbench.settings.enableNaturalLanguageSearch": false,
-  "workbench.settings.useSplitJSON": true,
-  "workbench.startupEditor": "none",
-  "workbench.tips.enabled": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false
 }
