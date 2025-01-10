@@ -1,12 +1,12 @@
 {
   "name": "prettier-config-smallela",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "prettier configs for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
   "homepage": "https://sridharmallela.github.io/my-workspace/packages/prettier-config/",
-  "type": "module",
   "main": "./dist/index.js",
+  "type": "commonjs",
   "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",

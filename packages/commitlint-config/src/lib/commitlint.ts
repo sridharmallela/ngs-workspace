@@ -1,5 +1,3 @@
-import type { UserConfig } from '@commitlint/types';
-
 // https://github.com/conventional-changelog/commitlint/blob/master/docs/reference/rules.md
 export const DEFAULT_CONFIG = {
   rules: {
@@ -43,4 +41,4 @@ export const DEFAULT_CONFIG = {
     'type-max-length': [2, 'always', 10],
     'type-min-length': [2, 'always', 3]
   }
-} as UserConfig;
+};

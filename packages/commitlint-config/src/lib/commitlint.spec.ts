@@ -1,23 +1,26 @@
-import { DEFAULT_CONFIG as testCandidate } from './commitlint.js';
+import { DEFAULT_CONFIG } from './commitlint.js';
 
 describe('CommitLint Config ---', () => {
+  let testCandidate: any;
+
   beforeEach(() => {
-    expect(testCandidate).toBeDefined();
-    expect(testCandidate.rules).toBeDefined();
+    expect(DEFAULT_CONFIG).toBeDefined();
+    expect(DEFAULT_CONFIG.rules).toBeDefined();
+    testCandidate = DEFAULT_CONFIG.rules;
   });
 
   describe('should test rules ---', () => {
     test.each(['body-empty', 'footer-empty', 'header-trim'])(
       'for rule "%s"',
       rule => {
-        expect(testCandidate.rules?.[rule]).toEqual([2, 'always']);
+        expect(testCandidate[rule]).toEqual([2, 'always']);
       }
     );
 
     test.each(['body-case', 'header-case', 'subject-case'])(
       'for rule "%s"',
       rule => {
-        expect(testCandidate.rules?.[rule]).toEqual([
+        expect(testCandidate[rule]).toEqual([
           2,
           'always',
           ['sentence-case', 'lower-case']
@@ -31,7 +34,7 @@ describe('CommitLint Config ---', () => {
       'scope-empty',
       'type-empty'
     ])('for rule "%s"', rule => {
-      expect(testCandidate.rules?.[rule]).toEqual([2, 'never']);
+      expect(testCandidate[rule]).toEqual([2, 'never']);
     });
 
     test.each([
@@ -50,19 +53,15 @@ describe('CommitLint Config ---', () => {
       'type-max-length',
       'type-min-length'
     ])('for rule "%s"', rule => {
-      expect(testCandidate.rules?.[rule]).toEqual([
-        2,
-        'always',
-        expect.any(Number)
-      ]);
+      expect(testCandidate[rule]).toEqual([2, 'always', expect.any(Number)]);
     });
 
     test.each(['scope-case', 'type-case'])('for rule "%s"', rule => {
-      expect(testCandidate.rules?.[rule]).toEqual([2, 'always', 'lower-case']);
+      expect(testCandidate[rule]).toEqual([2, 'always', 'lower-case']);
     });
 
     test('for rule "type-enum"', () => {
-      expect(testCandidate.rules?.['type-enum']).toEqual([
+      expect(testCandidate['type-enum']).toEqual([
         2,
         'always',
         ['chore', 'docs', 'feat', 'fix', 'refactor', 'revert', 'test']
