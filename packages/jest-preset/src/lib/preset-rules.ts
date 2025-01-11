@@ -45,7 +45,6 @@ const JEST_CONFIG_SMALLELA = {
   testPathIgnorePatterns: [
     '/coverage/',
     '/dist/',
-    '/e2e/',
     '/generated/',
     '/node_modules/'
   ],

@@ -44,7 +44,6 @@ describe('Prettier Config ---', () => {
       testPathIgnorePatterns: [
         '/coverage/',
         '/dist/',
-        '/e2e/',
         '/generated/',
         '/node_modules/'
       ],
