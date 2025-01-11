@@ -32,13 +32,28 @@ const prettierConfig: Config = {
       }
     },
     {
+      files: ['*.hbs'],
+      options: {
+        parser: 'lwc',
+        singleQuote: false
+      }
+    },
+    {
       files: ['*.md'],
       options: {
         proseWrap: 'never'
       }
     },
     {
-      files: ['.prettierrc', '*.code-snippets'],
+      files: [
+        '*.code-snippets',
+        '.commitlintrc',
+        '.eslintrc',
+        '.lintstagedrc',
+        '.nycrc',
+        '.prettierrc',
+        '.stylelintrc'
+      ],
       options: {
         parser: 'json'
       }
