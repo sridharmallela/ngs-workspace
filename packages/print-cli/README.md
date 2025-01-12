@@ -21,7 +21,6 @@ Generate a printable representation of ASCII text. Thanks to [Figlet](https://ww
     - [Non CLI](#non-cli)
     - [NPM Script](#npm-script)
     - [Options](#options)
-      - [help -h|--help](#help--h--help)
       - [enableBanner -b|--banner](#enablebanner--b--banner)
       - [font -f|--font](#font--f--font)
       - [color -c|--color](#color--c--color)
@@ -36,13 +35,13 @@ Generate a printable representation of ASCII text. Thanks to [Figlet](https://ww
 ### Global CLI
 
 ```bash
-    $ npm install -g print-cli
+  $ npm i -g print-cli
 ```
 
 ### Non CLI
 
 ```bash
-    $ npm install --save print-cli
+  $ npm i print-cli
 ```
 
 ## Usage
@@ -60,11 +59,10 @@ $ print-cli --banner --font slant "Hello World"
 ### Non CLI
 
 ```js
-var print = require('print-cli');
+const { Printer } = require('print-cli');
 
-print.PRINT({
-  text: '',
-  isBanner: true | false,
+Printer.printData('<text>', {
+  banner: true | false,
   font: 'standard|doom|slant|bell|chunky',
   color: 'blue|black|cyan|green|grey|magenta|red|white|yellow',
   bgColor: 'bgBlack|bgBlue|bgCyan|bgGreen|bgMagenta|bgRed|bgWhite|bgYellow'
@@ -72,11 +70,10 @@ print.PRINT({
 ```
 
 ```ts
-import { PRINT } from 'print-cli';
+import { Printer } from 'print-cli';
 
-PRINT({
-  text: '',
-  isBanner: true | false,
+Printer.printData('<text>', {
+  banner: true | false,
   font: 'standard|doom|slant|bell|chunky',
   color: 'blue|black|cyan|green|grey|magenta|red|white|yellow',
   bgColor: 'bgBlack|bgBlue|bgCyan|bgGreen|bgMagenta|bgRed|bgWhite|bgYellow'
@@ -89,7 +86,7 @@ PRINT({
 // package.json
 {
   "scripts": {
-    "print-banner": "./bin/print-cli -b -font standard -c green \"print-cli\""
+    "print-banner": "print-cli -b -f standard -c green \"print-cli\""
   }
 }
 ```
@@ -97,8 +94,7 @@ PRINT({
 ```bash
 $ npm run print-banner
 
-> print-cli@1.4.4 print-banner /Users/a565550/git/print-cli
-> ./bin/print-cli -b -font standard -c green "print-cli"
+> print-cli -b -f standard -c green "print-cli"
                _         _                _  _
   _ __   _ __ (_) _ __  | |_         ___ | |(_)
  | '_ \ | '__|| || '_ \ | __|_____  / __|| || |
@@ -109,31 +105,6 @@ $ npm run print-banner
 ```
 
 ### Options
-
-#### help (-h|--help)
-
-- specifies how to use print-cli
-
-```bash
-$ print-cli --help
-
-  Usage: print-cli [options] [text]
-
-
-  Options:
-
-        --version              output the version number
-    -b  --banner               print banner in ASCII style
-    -f  --font [font]          font used to print text [standard|doom|slant|bell|chunky]
-    -c  --color [color]        color of the printed text [blue|black|cyan|green|grey|magenta|red|white|yellow|rainbow|zebra|america]
-        --bg-color [bg color]  background color of the printed text [bgBlack|bgBlue|bgCyan|bgGreen|bgMagenta|bgRed|bgWhite|bgYellow]
-    -h, --help                 output usage information
-
-  Examples:
-
-    $ print-cli --color red "print banner"
-    $ print-cli --help
-```
 
 #### enableBanner (-b|--banner)
 
@@ -187,9 +158,7 @@ $ print-cli --help
 Global package:
 
 ```bash
-    $ npm uninstall -g print-cli
-    $ npm cache clean
-    $ npm install -g print-cli@latest
+  npx latest
 ```
 
 ## License

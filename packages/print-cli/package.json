@@ -1,6 +1,6 @@
 {
   "name": "print-cli",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "print command line interface",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -19,9 +19,13 @@
   "config": {
     "unsafe-perm": true
   },
-  "directories": {
-    "bin": "bin"
+  "bin": {
+    "print-cli": "./dist/index.js"
   },
   "keywords": [],
-  "dependencies": {}
+  "dependencies": {
+    "commander": ">=13",
+    "colors": ">=1.4",
+    "figlet": ">=1.8"
+  }
 }
