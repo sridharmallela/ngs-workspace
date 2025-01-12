@@ -1,3 +1,3 @@
-import { DEFAULT_CONFIG } from './lib/commitlint.js';
+import { DEFAULT_CONFIG } from './lib/commitlint';
 
 export = DEFAULT_CONFIG;

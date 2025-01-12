@@ -1,4 +1,4 @@
-import { DEFAULT_CONFIG } from './commitlint.js';
+import { DEFAULT_CONFIG } from './commitlint';
 
 describe('CommitLint Config ---', () => {
   let testCandidate: any;

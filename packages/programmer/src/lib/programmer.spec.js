@@ -2,7 +2,9 @@
 
 'use strict';
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { resolve } = require('node:path');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const testCandidate = require('./programmer');
 
 describe('lib/programmer ---', () => {

@@ -1,3 +1,3 @@
-import { prettierConfig } from './lib/prettier.js';
+import { prettierConfig } from './lib/prettier';
 
 export = prettierConfig;

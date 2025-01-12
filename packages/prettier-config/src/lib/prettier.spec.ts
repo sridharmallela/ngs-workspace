@@ -1,4 +1,4 @@
-import { prettierConfig } from './prettier.js';
+import { prettierConfig } from './prettier';
 
 describe('Prettier Config ---', () => {
   test('for valid', () => {

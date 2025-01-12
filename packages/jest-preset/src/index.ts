@@ -1,1 +1,1 @@
-export * from './lib/preset-rules.js';
+export * from './lib/preset-rules';

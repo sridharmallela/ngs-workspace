@@ -8,7 +8,7 @@
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": false
   },
-  "cSpell.words": ["Mallela", "Sridhar"],
+  "cSpell.words": ["Buildable", "Mallela", "Sridhar"],
   "diffEditor.ignoreTrimWhitespace": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
