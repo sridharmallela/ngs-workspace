@@ -1,6 +1,6 @@
 {
   "name": "versions-checker",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "check installed versions of node, npm, yarn, and git",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "unsafe-perm": true
   },
   "bin": {
-    "versions-checker": "./bin/versions-checker"
+    "versions-checker": "./dist/index.js"
   },
   "keywords": [],
   "dependencies": {
