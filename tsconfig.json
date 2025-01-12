@@ -7,9 +7,6 @@
       "path": "./packages/print-cli"
     },
     {
-      "path": "./packages/programmer"
-    },
-    {
       "path": "./packages/versions-checker"
     },
     {
