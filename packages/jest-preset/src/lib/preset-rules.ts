@@ -4,7 +4,7 @@ const esModules = ['@commitlint', 'prettier'].join('|');
 
 const JEST_CONFIG_SMALLELA = {
   collectCoverage: true,
-  collectCoverageFrom: '**/*.[jt]s?(x)',
+  collectCoverageFrom: '<rootDir>/**/*.[jt]s?(x)',
   coverageDirectory: '<rootDir>/coverage',
   coveragePathIgnorePatterns: [
     '/coverage/',
@@ -41,7 +41,7 @@ const JEST_CONFIG_SMALLELA = {
   slowTestThreshold: 5,
   testTimeout: 20000,
   testEnvironment: 'node',
-  testMatch: ['**/?(*.)+(spec|test|e2e).[tj]s?(x)'],
+  testMatch: ['<rootDir>/**/?(*.)+(spec|test|e2e).[tj]s?(x)'],
   testPathIgnorePatterns: [
     '/coverage/',
     '/dist/',

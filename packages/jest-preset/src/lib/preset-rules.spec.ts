@@ -7,7 +7,7 @@ describe('Prettier Config ---', () => {
     expect(JEST_CONFIG_SMALLELA).toBeDefined();
     expect(JEST_CONFIG_SMALLELA).toEqual({
       collectCoverage: true,
-      collectCoverageFrom: '**/*.[jt]s?(x)',
+      collectCoverageFrom: '<rootDir>/**/*.[jt]s?(x)',
       coverageDirectory: '<rootDir>/coverage',
       coveragePathIgnorePatterns: [
         '/coverage/',
@@ -40,7 +40,7 @@ describe('Prettier Config ---', () => {
       moduleFileExtensions: ['js', 'cjs', 'mjs', 'json', 'ts'],
       slowTestThreshold: 5,
       testEnvironment: 'node',
-      testMatch: ['**/?(*.)+(spec|test|e2e).[tj]s?(x)'],
+      testMatch: ['<rootDir>/**/?(*.)+(spec|test|e2e).[tj]s?(x)'],
       testPathIgnorePatterns: [
         '/coverage/',
         '/dist/',
