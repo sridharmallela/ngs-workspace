@@ -1,7 +1,7 @@
 // https://github.com/conventional-changelog/commitlint/blob/master/docs/reference/rules.md
 export const DEFAULT_CONFIG = {
   rules: {
-    'body-case': [2, 'always', ['sentence-case', 'lower-case']],
+    // 'body-case': [2, 'always', ['sentence-case', 'lower-case']],
     'body-empty': [2, 'always'],
     // 'body-full-stop',
     'body-leading-blank': [2, 'never'],
@@ -13,7 +13,7 @@ export const DEFAULT_CONFIG = {
     'footer-max-length': [2, 'always', 100],
     'footer-max-line-length': [2, 'always', 100],
     'footer-min-length': [2, 'always', 35],
-    'header-case': [2, 'always', ['sentence-case', 'lower-case']],
+    // 'header-case': [2, 'always', ['sentence-case', 'lower-case']],
     // 'header-full-stop',
     'header-max-length': [2, 'always', 200],
     'header-min-length': [2, 'always', 35],
@@ -25,7 +25,7 @@ export const DEFAULT_CONFIG = {
     'scope-max-length': [2, 'always', 50],
     'scope-min-length': [2, 'always', 3],
     // 'signed-off-by',
-    'subject-case': [2, 'always', ['sentence-case', 'lower-case']],
+    // 'subject-case': [2, 'always', ['sentence-case', 'lower-case']],
     'subject-empty': [2, 'never'],
     // 'subject-full-stop',
     'subject-max-length': [2, 'always', 200],

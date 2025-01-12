@@ -17,16 +17,16 @@ describe('CommitLint Config ---', () => {
       }
     );
 
-    test.each(['body-case', 'header-case', 'subject-case'])(
-      'for rule "%s"',
-      rule => {
-        expect(testCandidate[rule]).toEqual([
-          2,
-          'always',
-          ['sentence-case', 'lower-case']
-        ]);
-      }
-    );
+    // test.each(['body-case', 'header-case', 'subject-case'])(
+    //   'for rule "%s"',
+    //   rule => {
+    //     expect(testCandidate[rule]).toEqual([
+    //       2,
+    //       'always',
+    //       ['sentence-case', 'lower-case']
+    //     ]);
+    //   }
+    // );
 
     test.each([
       'body-leading-blank',
