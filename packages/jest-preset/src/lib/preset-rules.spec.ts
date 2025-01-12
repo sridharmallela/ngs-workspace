@@ -40,7 +40,7 @@ describe('Prettier Config ---', () => {
       moduleFileExtensions: ['js', 'cjs', 'mjs', 'json', 'ts'],
       slowTestThreshold: 5,
       testEnvironment: 'node',
-      testMatch: ['<rootDir>/**/?(*.)+(spec|test|e2e).[tj]s?(x)'],
+      testMatch: ['**/?(*.)+(spec|test|e2e).[tj]s?(x)'],
       testPathIgnorePatterns: [
         '/coverage/',
         '/dist/',

@@ -41,7 +41,7 @@ const JEST_CONFIG_SMALLELA = {
   slowTestThreshold: 5,
   testTimeout: 20000,
   testEnvironment: 'node',
-  testMatch: ['<rootDir>/**/?(*.)+(spec|test|e2e).[tj]s?(x)'],
+  testMatch: ['**/?(*.)+(spec|test|e2e).[tj]s?(x)'],
   testPathIgnorePatterns: [
     '/coverage/',
     '/dist/',
