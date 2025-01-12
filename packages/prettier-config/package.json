@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-smallela",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "prettier configs for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -21,9 +21,9 @@
   },
   "keywords": [],
   "peerDependencies": {
-    "prettier": "~3.4.2"
+    "prettier": ">=3.4"
   },
   "dependencies": {
-    "@prettier/plugin-xml": "~3.4.1"
+    "@prettier/plugin-xml": ">=3.4"
   }
 }
