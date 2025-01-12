@@ -8,6 +8,7 @@
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": false
   },
+  "cSpell.words": ["Mallela", "Sridhar"],
   "diffEditor.ignoreTrimWhitespace": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
@@ -45,12 +46,12 @@
   "files.autoSaveDelay": 5000,
   "files.exclude": {
     "**/.angular": true,
+    "**/.nx": true,
     "**/.nyc_output": true,
     "**/bin": true,
     "**/coverage": true,
     "**/dist": true,
     "**/node_modules": true,
-    "**/.nx": true,
     "**/out-tsc": true
   },
   "files.insertFinalNewline": true,
