@@ -1,1 +1,5 @@
-export * from './lib/versions-checker';
+#!/usr/bin/env node
+
+import { VersionsCheckerCli } from './lib/cli';
+
+export default new VersionsCheckerCli();
