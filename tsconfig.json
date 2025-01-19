@@ -20,6 +20,9 @@
     },
     {
       "path": "./packages/nx-commands"
+    },
+    {
+      "path": "./packages/npm-commands"
     }
   ]
 }
