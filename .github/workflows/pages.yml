@@ -2,10 +2,8 @@ name: Deploy Documentation
 
 on:
   push:
-    paths-ignore:
-      - ".github/**"
-      - ".husky/**"
-      - ".vscode/**"
+    paths:
+      - "docs/**"
 
     branches:
       - main
