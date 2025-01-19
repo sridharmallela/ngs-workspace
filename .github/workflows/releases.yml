@@ -6,7 +6,7 @@ on:
       - ".github/**"
       - ".husky/**"
       - ".vscode/**"
-      - "resources/**"
+      - "docs/**"
 
     branches:
       - main
