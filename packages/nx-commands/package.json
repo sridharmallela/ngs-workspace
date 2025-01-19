@@ -1,0 +1,33 @@
+{
+  "name": "nx-commands-smallela",
+  "version": "0.0.1",
+  "description": "Reusable commands for NPM",
+  "author": "Sridhar Mallela",
+  "license": "MIT",
+  "homepage": "https://sridharmallela.github.io/my-workspace/packages/nx-commands/",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sridharmallela/my-workspace.git",
+    "directory": "packages/nx-commands"
+  },
+  "bugs": {
+    "url": "https://github.com/sridharmallela/my-workspace/issues"
+  },
+  "config": {
+    "unsafe-perm": true
+  },
+  "keywords": []
+}
