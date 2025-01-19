@@ -23,6 +23,9 @@
     },
     {
       "path": "./packages/npm-commands"
+    },
+    {
+      "path": "./packages/eslint-config"
     }
   ]
 }
