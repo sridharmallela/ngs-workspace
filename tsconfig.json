@@ -26,6 +26,9 @@
     },
     {
       "path": "./packages/eslint-config"
+    },
+    {
+      "path": "./packages/stylelint-config"
     }
   ]
 }
