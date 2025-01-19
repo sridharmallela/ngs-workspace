@@ -44,11 +44,13 @@ try {
       execSync(`cd ${projPath} && npm publish`);
       info(`Completed npm publish for ${proj} and tag is v${pkgTag}`);
       tags.push(`${proj}@${pkgTag}`);
-      debug(`${proj} >> Executing npm deprecate"`);
-      execSync(
-        `npm deprecate ${pkgName}@"<${pkgTag}" "Version is no longer supported, deprecated in favor of latest version, please upgrade to \"${pkgName}@${pkgTag}\" which provides latest features, performance improvements and bugfixes."`
-      );
-      info(`Completed npm deprecate for ${proj}`);
+      if (npmTag !== '0.0.0') {
+        debug(`${proj} >> Executing npm deprecate"`);
+        execSync(
+          `npm deprecate ${pkgName}@"<${pkgTag}" "Version is no longer supported, deprecated in favor of latest version, please upgrade to \"${pkgName}@${pkgTag}\" which provides latest features, performance improvements and bugfixes."`
+        );
+        info(`Completed npm deprecate for ${proj}`);
+      }
     } else {
       info(`Skipping npm publish for ${proj} and tag is v${pkgTag}`);
     }
