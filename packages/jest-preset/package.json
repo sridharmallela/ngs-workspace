@@ -5,8 +5,9 @@
   "author": "Sridhar Mallela",
   "license": "MIT",
   "homepage": "https://sridharmallela.github.io/my-workspace/packages/jest-preset/",
-  "main": "./jest-preset.cjs",
   "type": "commonjs",
+  "main": "./jest-preset.cjs",
+  "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",

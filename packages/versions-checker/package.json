@@ -7,6 +7,7 @@
   "homepage": "https://sridharmallela.github.io/my-workspace/packages/versions-checker/",
   "type": "commonjs",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",

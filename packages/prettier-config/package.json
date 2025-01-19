@@ -5,8 +5,9 @@
   "author": "Sridhar Mallela",
   "license": "MIT",
   "homepage": "https://sridharmallela.github.io/my-workspace/packages/prettier-config/",
-  "main": "./dist/index.js",
   "type": "commonjs",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",
