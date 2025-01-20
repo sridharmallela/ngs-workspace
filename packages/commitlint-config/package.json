@@ -1,25 +1,27 @@
 {
   "name": "commitlint-config-smallela",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Commitlint configs for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
-  "homepage": "https://sridharmallela.github.io/my-workspace/packages/commitlint-config/",
+  "homepage": "https://sridharmallela.github.io/smallela-workspace/commitlint-config/",
   "type": "commonjs",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sridharmallela/my-workspace.git",
+    "url": "git+https://github.com/sridharmallela/smallela-workspace.git",
     "directory": "packages/commitlint-config"
   },
   "bugs": {
-    "url": "https://github.com/sridharmallela/my-workspace/issues"
+    "url": "https://github.com/sridharmallela/smallela-workspace/issues"
   },
   "config": {
     "unsafe-perm": true
   },
   "keywords": [],
-  "dependencies": {}
+  "peerDependencies": {
+    "tslib": ">=2"
+  }
 }
