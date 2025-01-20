@@ -1,1 +1,1 @@
-export * from './lib/npm';
+export * from './lib/npm.command';

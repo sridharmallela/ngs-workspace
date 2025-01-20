@@ -49,7 +49,7 @@ try {
       if (npmTag !== '0.0.0') {
         debug(`${proj} >> Executing npm deprecate"`);
         execSync(
-          `npm deprecate ${pkgName}@"<${pkgTag}" "Version is no longer supported, deprecated in favor of latest version, please upgrade to \"${pkgName}@${pkgTag}\" which provides latest features, performance improvements and bugfixes."`
+          `npm deprecate ${pkgName}@"<${pkgTag}" "Version is no longer supported, deprecated in favor of latest version, please update to \"${pkgName}@${pkgTag}\", which offers more features, better tests and offers security fixes. Any enhancements or bug fix requests to this version are no more supported."`
         );
         info(`Completed npm deprecate for ${proj}`);
       }
