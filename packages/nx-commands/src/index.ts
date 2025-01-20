@@ -1,1 +1,1 @@
-export * from './lib/nx';
+export * from './lib/nx.command';
