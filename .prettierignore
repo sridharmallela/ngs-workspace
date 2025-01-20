@@ -12,3 +12,4 @@ codeowners
 coverage
 dist
 mocks
+*.min.css
