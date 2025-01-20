@@ -6,7 +6,7 @@ permalink: '/versions-checker'
 
 [![npm](https://img.shields.io/npm/v/versions-checker.svg?style=plastic)](https://www.npmjs.com/package/versions-checker) [![npm](https://img.shields.io/npm/dw/versions-checker.svg?style=plastic)](https://www.npmjs.com/package/versions-checker) [![npm](https://img.shields.io/npm/dm/versions-checker.svg?style=plastic)](https://www.npmjs.com/package/versions-checker) [![npm](https://img.shields.io/npm/dy/versions-checker.svg?style=plastic)](https://www.npmjs.com/package/versions-checker) [![npm](https://img.shields.io/npm/dt/versions-checker.svg?style=plastic)](https://www.npmjs.com/package/versions-checker)
 
-![introduction](https://github.com/sridharmallela/versions-checker/blob/main/assets/intro.gif?raw=true)
+![introduction](/assets/img/versions-checker.gif)
 
 Check installed versions of node, npm, yarn, and git
 

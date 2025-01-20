@@ -1,0 +1,5 @@
+.vscode
+.husky
+.github
+docs
+.commitlintrc.ts

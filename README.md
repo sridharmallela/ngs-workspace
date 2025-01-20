@@ -1,4 +1,4 @@
-# my-workspace
+# smallela-workspace
 
 ## Post Steps for Scaffold
 
@@ -9,7 +9,7 @@
 - In `.eslintrc.json`, update `@nx/dependency-checks` with `"ignoredDependencies": ["tslib"],`
 - In `package.json`
 
-  - remove `tslib` from `dependencies`
+  - remove `tslib` from `dependencies` and move it to `peerDependencies`
   - update
 
   ```json
@@ -19,18 +19,18 @@
     "description": "",
     "author": "Sridhar Mallela",
     "license": "MIT",
-    "homepage": "https://sridharmallela.github.io/my-workspace/packages/<pkg-name>/",
+    "homepage": "https://sridharmallela.github.io/smallela-workspace/<pkg-name>/",
     "type": "commonjs",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "typings": "./dist/index.d.ts",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/sridharmallela/my-workspace.git",
+      "url": "git+https://github.com/sridharmallela/smallela-workspace.git",
       "directory": "packages/<pkg-name>"
     },
     "bugs": {
-      "url": "https://github.com/sridharmallela/my-workspace/issues"
+      "url": "https://github.com/sridharmallela/smallela-workspace/issues"
     },
     "config": {
       "unsafe-perm": true

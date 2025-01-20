@@ -10,7 +10,7 @@ permalink: '/print-cli'
 
 Generate a printable representation of ASCII text. Thanks to [Figlet](https://www.npmjs.com/package/figlet). Try it [here](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
-![intro](https://github.com/sridharmallela/print-cli/blob/main/assets/intro.gif?raw=true)
+![intro](/assets/img/print-cli/intro.gif)
 
 ## Table of Contents
 
@@ -30,8 +30,6 @@ Generate a printable representation of ASCII text. Thanks to [Figlet](https://ww
     - [background color --bg-color](#background-color---bg-color)
 - [Updating print-cli](#updating-print-cli)
 - [License](#license)
-
-<!-- /TOC -->
 
 <!-- /TOC -->
 
@@ -124,7 +122,7 @@ $ npm run print-banner
   - bell
   - chunky
 
-![Fonts-Usage](https://github.com/sridharmallela/print-cli/blob/main/assets/fonts.gif?raw=true)
+![Fonts-Usage](/assets/img/print-cli/fonts.gif)
 
 #### color (-c|--color)
 
@@ -142,7 +140,7 @@ $ npm run print-banner
   - zebra
   - america
 
-![Colors-Usage](https://github.com/sridharmallela/print-cli/blob/main/assets/colors.gif?raw=true)
+![Colors-Usage](/assets/img/print-cli/colors.gif)
 
 #### background color (--bg-color)
 
@@ -156,7 +154,7 @@ $ npm run print-banner
   - bgWhite
   - bgYellow
 
-![Background-Colors-Usage](https://github.com/sridharmallela/print-cli/blob/main/assets/bg-colors.gif?raw=true)
+![Background-Colors-Usage](/assets/img/print-cli/bg-colors.gif)
 
 ## Updating print-cli
 
