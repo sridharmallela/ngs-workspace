@@ -13,9 +13,45 @@ permalink: '/npm-commands'
 <!-- TOC -->
 
 - [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
 - [License](#license)
 
 <!-- /TOC -->
+
+## Installation
+
+```bash
+  $ npm i --save-dev npm-commands-smallela
+```
+
+## Usage
+
+```ts
+import { NpmCommands } from 'npm-commands-smallela';
+
+// get package view by executing `npm view
+NpmCommands.getPackageView('print-cli');
+NpmCommands.getPackageView('print-cli', 'dist-tags.latest');
+
+// deprecate package programmatically
+NpmCommands.deprecatePackage('print-cli', '1.2.3');
+NpmCommands.deprecatePackage(
+  'print-cli',
+  '1.2.3',
+  'https://my-registry.npmjs.org'
+);
+NpmCommands.deprecatePackage(
+  'print-cli',
+  '1.2.3',
+  'https://my-registry.npmjs.org',
+  'Deprecated in favor of latest version'
+);
+
+// programmatically update all libraries versions in monorepo
+NpmCommands.updateVersion('<TEST_DIRECTORY>');
+NpmCommands.updateVersion('<TEST_DIRECTORY>', 'minor');
+```
 
 ## License
 

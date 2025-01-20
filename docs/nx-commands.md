@@ -10,14 +10,14 @@ permalink: '/nx-commands'
 
 This module exports all the commands that Nx supports programmatically.
 
-## Table of Contents
-
 <!-- TOC -->
 
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+
+<!-- /TOC -->license)
 
 <!-- /TOC -->
 
@@ -34,9 +34,6 @@ import { NxCommands } from 'nx-commands-smallela';
 
 // check what things have been modified for Nx Project
 affected = await NxCommands.getAffected(destBranch);
-
-// check test coverage for Nx Project
-testCoverage = await NxCommands.captureCodeCoverage([...projects]);
 
 // retrieve all projects with publish task
 projects = await NxCommands.getProjectsWithTask('publish');

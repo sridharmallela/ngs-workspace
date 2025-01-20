@@ -1,6 +1,6 @@
 {
   "name": "npm-commands-smallela",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable commands for NPM",
   "author": "Sridhar Mallela",
   "license": "MIT",

@@ -53,11 +53,11 @@ describe('Npm Commands ---', () => {
 
   describe('should test deprecatePackage ---', () => {
     test('for minimal inputs', () => {
-      NpmCommands.deprecatePackage('TEST', 'TEST_VER', 'TEST_REG');
+      NpmCommands.deprecatePackage('TEST', 'TEST_VER');
       expect(execSyncSpy).toHaveBeenCalled();
       expect(execSyncSpy).toHaveBeenCalledTimes(1);
       expect(execSyncSpy).toHaveBeenCalledWith(
-        'npm deprecate TEST@"<TEST_VER" "please update to TEST_VER@TEST_VER, which offers more features, better tests and offers security fixes. Any enhancements or bug fix requests to this version are no more supported." --registry=TEST_REG'
+        'npm deprecate TEST@"<TEST_VER" "please update to TEST_VER@TEST_VER, which offers more features, better tests and offers security fixes. Any enhancements or bug fix requests to this version are no more supported." --registry=https://registry.npmjs.org'
       );
     });
 
