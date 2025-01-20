@@ -6,6 +6,8 @@ permalink: '/versions-checker'
 
 [![npm](https://img.shields.io/npm/v/versions-checker.svg?style=plastic)](https://www.npmjs.com/package/versions-checker) [![npm](https://img.shields.io/npm/dw/versions-checker.svg?style=plastic)](https://www.npmjs.com/package/versions-checker) [![npm](https://img.shields.io/npm/dm/versions-checker.svg?style=plastic)](https://www.npmjs.com/package/versions-checker) [![npm](https://img.shields.io/npm/dy/versions-checker.svg?style=plastic)](https://www.npmjs.com/package/versions-checker) [![npm](https://img.shields.io/npm/dt/versions-checker.svg?style=plastic)](https://www.npmjs.com/package/versions-checker)
 
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
+
 ![introduction](/assets/img/versions-checker.gif)
 
 Check installed versions of node, npm, yarn, and git
@@ -14,40 +16,19 @@ Check installed versions of node, npm, yarn, and git
 
 <!-- TOC -->
 
-- [Versions Checker](#versions-checker)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-    - [Global CLI](#global-cli)
-    - [Non CLI](#non-cli)
-  - [Usage](#usage)
-    - [Non CLI](#non-cli)
-    - [NPM Script](#npm-script)
-      - [validate](#validate)
-      - [checkAll](#checkall)
-    - [Options](#options)
-      - [help -h|--help](#help--h--help)
-      - [version --version](#version---version)
-      - [all --all](#all---all)
-      - [silent -s|--silent](#silent--s--silent)
-      - [node -n|--node](#node--n--node)
-      - [npm -m|--npm](#npm--m--npm)
-      - [yarn -y|--yarn](#yarn--y--yarn)
-      - [Git -g|--git](#git--g--git)
-      - [eslint -e|--eslint](#eslint--e--eslint)
-  - [Updating versions-checker](#updating-versions-checker)
-  - [License](#license)
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Non CLI](#non-cli)
+  - [NPM Script](#npm-script)
+    - [validate](#validate)
+    - [checkAll](#checkall)
+  - [Options](#options)
+- [License](#license)
 
 <!-- /TOC -->
 
 ## Installation
-
-### Global CLI
-
-```bash
-  $ npm i -g versions-checker
-```
-
-### Non CLI
 
 ```bash
   $ npm i --save-dev versions-checker
@@ -79,26 +60,6 @@ $ versions-checker --help
 ```
 
 ### Non CLI
-
-```js
-var checker = require('versions-checker');
-
-// returns boolean
-const isValid = checker.validate({
-  node: '>=6.9.5',
-  npm: '>1',
-  yarn: '0.24 || 0.25',
-  git: '2.14',
-  eslint: '1.5.6'
-});
-
-const isNodeValid = checker.validate({ node: '6.9.5' });
-
-const versions = checker.checkAll();
-
-console.log('node version is ' + versions.node);
-console.log('npm version is ' + versions.node);
-```
 
 ```ts
 import { validate, checkAll } from 'versions-checker';
@@ -132,12 +93,12 @@ console.log('npm version is ' + versions.node);
 ```
 
 ```bash
-    $ npm run check-versions
+  $ npm run check-versions
 
-    > versions-checker --node ">= 20.0.0" --npm ">=10.0.0"
+  > versions-checker --node ">= 20.0.0" --npm ">=10.0.0"
 
-        node: 6.9.5
-        npm: 5.2.0
+    node: 6.9.5
+    npm: 5.2.0
 ```
 
 #### validate
@@ -150,97 +111,87 @@ console.log('npm version is ' + versions.node);
 
 ### Options
 
-#### help (-h|--help)
+`help (-h|--help)`
 
 - specifies how to use versions-checker
 
-#### version (--version)
+`version (--version)`
 
 - specifies which version of versions-checker.
 
-#### all (--all)
+`all (--all)`
 
 - specifies to print installed versions.
 
-#### silent (-s|--silent)
+`silent (-s|--silent)`
 
-- specifies to not exit command line if versions dont match.
+- specifies to not exit command line if versions don't match.
 
-#### node (-n|--node)
+`node (-n|--node)`
 
 - checks which version of node is being used, and compares it with user input version.
 
 ```bash
-    $ versions-checker --node ">4.5"
-        node: 6.9.5
-    $ versions-checker --node "<4.5"
-        node: 6.9.5 but expected is <4.5
-    $ versions-checker --node 4
-        node: 6.9.5 but expected is 4
-    $ versions-checker --node 6
-        node: 6.9.5
-    $ versions-checker -n 6.9
-        node: 6.9.5
-    $ versions-checker -n 6.10
-        node: 6.9.5 but expected is 6.10
+  $ versions-checker --node ">4.5"
+    node: 6.9.5
+  $ versions-checker --node "<4.5"
+    node: 6.9.5 but expected is <4.5
+  $ versions-checker --node 4
+    node: 6.9.5 but expected is 4
+  $ versions-checker --node 6
+    node: 6.9.5
+  $ versions-checker -n 6.9
+    node: 6.9.5
+  $ versions-checker -n 6.10
+    node: 6.9.5 but expected is 6.10
 ```
 
-#### npm (-m|--npm)
+`npm (-m|--npm)`
 
 - checks which version of npm is being used, and compares it with user input version.
 
 ```bash
-    $ versions-checker --npm ">=2.5.0"
-        npm: 5.2.0
-    $ versions-checker --npm ">2.5.0"
-        npm: 5.2.0
-    $ versions-checker -m ">2.5"
-        npm: 5.2.0
-    $ versions-checker -m "<5.3"
-        npm: 5.2.0
+  $ versions-checker --npm ">=2.5.0"
+    npm: 5.2.0
+  $ versions-checker --npm ">2.5.0"
+    npm: 5.2.0
+  $ versions-checker -m ">2.5"
+    npm: 5.2.0
+  $ versions-checker -m "<5.3"
+    npm: 5.2.0
 ```
 
-#### yarn (-y|--yarn)
+`yarn (-y|--yarn)`
 
 - checks which version of yarn is being used, and compares it with user input version.
 
 ```bash
-    $ versions-checker --yarn "0.27"
-        yarn: 0.27.5
-    $ versions-checker -y "0.27.5"
-        yarn: 0.27.5
+  $ versions-checker --yarn "0.27"
+    yarn: 0.27.5
+  $ versions-checker -y "0.27.5"
+    yarn: 0.27.5
 ```
 
-#### Git (-g|--git)
+`Git (-g|--git)`
 
 - checks which version of git is being used, and compares it with user input version.
 
 ```bash
-    $ versions-checker -g "2"
-        git: 2.14.1
-    $ versions-checker --git "2.14"
-        git: 2.14.1
+  $ versions-checker -g "2"
+    git: 2.14.1
+  $ versions-checker --git "2.14"
+    git: 2.14.1
 ```
 
-#### eslint (-e|--eslint)
+`eslint (-e|--eslint)`
 
 - checks which version of eslint is being used, and compares it with user input version.
 
 ```bash
-    $ versions-checker --eslint "4.5"
-        eslint: 4.5.0
-    $ versions-checker -e "4"
-        eslint: 4.5.0
-```
-
-## Updating versions-checker
-
-Global package:
-
-```bash
-  $ npm uninstall -g versions-checker
-  $ npm cache clean
-  $ npm i -g versions-checker
+  $ versions-checker --eslint "4.5"
+    eslint: 4.5.0
+  $ versions-checker -e "4"
+    eslint: 4.5.0
 ```
 
 ## License

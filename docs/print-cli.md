@@ -6,7 +6,7 @@ permalink: '/print-cli'
 
 [![npm](https://img.shields.io/npm/v/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli) [![npm](https://img.shields.io/npm/dw/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli) [![npm](https://img.shields.io/npm/dm/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli) [![npm](https://img.shields.io/npm/dy/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli) [![npm](https://img.shields.io/npm/dt/print-cli.svg?style=plastic)](https://www.npmjs.com/package/print-cli)
 
-[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/print-cli.svg?style=plastic)](https://github.com/sridharmallela/print-cli/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/print-cli/main/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
 
 Generate a printable representation of ASCII text. Thanks to [Figlet](https://www.npmjs.com/package/figlet). Try it [here](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
@@ -18,33 +18,18 @@ Generate a printable representation of ASCII text. Thanks to [Figlet](https://ww
 
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
-  - [Global CLI](#global-cli)
-  - [Non CLI](#non-cli)
 - [Usage](#usage)
   - [Non CLI](#non-cli)
   - [NPM Script](#npm-script)
   - [Options](#options)
-    - [enableBanner -b|--banner](#enablebanner--b--banner)
-    - [font -f|--font](#font--f--font)
-    - [color -c|--color](#color--c--color)
-    - [background color --bg-color](#background-color---bg-color)
-- [Updating print-cli](#updating-print-cli)
 - [License](#license)
 
 <!-- /TOC -->
 
 ## Installation
 
-### Global CLI
-
 ```bash
-  $ npm i -g print-cli
-```
-
-### Non CLI
-
-```bash
-  $ npm i print-cli
+  $ npm i --save-dev print-cli
 ```
 
 ## Usage
@@ -109,11 +94,11 @@ $ npm run print-banner
 
 ### Options
 
-#### enableBanner (-b|--banner)
+`enableBanner (-b|--banner)`
 
 - specifies to enable ASCII banner
 
-#### font (-f|--font)
+`font (-f|--font)`
 
 - specifies font used to print the banner
   - standard (default)
@@ -124,7 +109,7 @@ $ npm run print-banner
 
 ![Fonts-Usage](/assets/img/print-cli/fonts.gif)
 
-#### color (-c|--color)
+`color (-c|--color)`
 
 - specifies color of the text being printed
   - blue
@@ -142,7 +127,7 @@ $ npm run print-banner
 
 ![Colors-Usage](/assets/img/print-cli/colors.gif)
 
-#### background color (--bg-color)
+`background color (--bg-color)`
 
 - specifies background color of the printed text
   - bgBlack
@@ -155,14 +140,6 @@ $ npm run print-banner
   - bgYellow
 
 ![Background-Colors-Usage](/assets/img/print-cli/bg-colors.gif)
-
-## Updating print-cli
-
-Global package:
-
-```bash
-  npx latest
-```
 
 ## License
 

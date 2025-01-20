@@ -4,6 +4,10 @@ title: 'CommitLint Config'
 permalink: '/commitlint-config'
 ---
 
+[![npm](https://img.shields.io/npm/v/commitlint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-smallela) [![npm](https://img.shields.io/npm/dw/commitlint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-smallela) [![npm](https://img.shields.io/npm/dm/commitlint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-smallela) [![npm](https://img.shields.io/npm/dy/commitlint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-smallela) [![npm](https://img.shields.io/npm/dt/commitlint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-smallela)
+
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
+
 This package is a [`commitlint`](https://github.com/conventional-changelog/commitlint) configuration for commit message conventions and enforcement. It's a modified variation of [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/blob/master/@commitlint/config-conventional), with the following enhancements:
 
 - Commit message header-length is extended to 80 characters, _provoked by lengthy Greenkeeper's commit message subject lines_.
@@ -12,19 +16,18 @@ This package is a [`commitlint`](https://github.com/conventional-changelog/commi
 
 <!-- TOC -->
 
-- [Commitlint Config](#commitlint-config)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Usage](#usage)
-    - [Using package.json file](#using-packagejson-file)
-    - [Using .commitlintrc.json file](#using-commitlintrcjson-file)
-    - [Using .commitlintrc.yml file](#using-commitlintrcyml-file)
-    - [Using commitlint.config.js, .commitlintrc.js file](#using-commitlintconfigjs-commitlintrcjs-file)
-  - [Custom Configuration](#custom-configuration)
-    - [Using JSON](#using-json)
-    - [Using YAML](#using-yaml)
-    - [Using JavaScript](#using-javascript)
-  - [License](#license)
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Using package.json file](#using-packagejson-file)
+  - [Using .commitlintrc.json file](#using-commitlintrcjson-file)
+  - [Using .commitlintrc.yml file](#using-commitlintrcyml-file)
+  - [Using commitlint.config.js, .commitlintrc.js file](#using-commitlintconfigjs-commitlintrcjs-file)
+- [Custom Configuration](#custom-configuration)
+  - [Using JSON](#using-json)
+  - [Using YAML](#using-yaml)
+  - [Using JavaScript](#using-javascript)
+- [License](#license)
 
 <!-- /TOC -->
 

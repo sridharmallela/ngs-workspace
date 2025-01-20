@@ -4,13 +4,16 @@ title: 'Prettier Config'
 permalink: '/prettier-config'
 ---
 
+[![npm](https://img.shields.io/npm/v/prettier-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-smallela) [![npm](https://img.shields.io/npm/dw/prettier-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-smallela) [![npm](https://img.shields.io/npm/dm/prettier-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-smallela) [![npm](https://img.shields.io/npm/dy/prettier-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-smallela) [![npm](https://img.shields.io/npm/dt/prettier-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-smallela)
+
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
+
 A **[Prettier](https://prettier.io/)** [shareable config](https://prettier.io/docs/en/configuration.html#sharing-configurations) for web projects.
 
 ## Table of Contents
 
 <!-- TOC -->
 
-- [Prettier Config](#prettier-config)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
