@@ -40,6 +40,7 @@ try {
       info(`${proj} >> copying ".npmrc", ".npmignore", "${proj}.md"`);
       execSync(`cp ${workspace}/.npmrc ${projPath}`);
       execSync(`cp ${workspace}/.npmignore ${projPath}`);
+      execSync(`cp ${workspace}/LICENSE ${projPath}`);
       execSync(`cp ${workspace}/docs/${proj}.md ${projPath}/README.md`);
       debug(`${proj} >> Executing "cd ${projPath} && npm publish"`);
       execSync(`cd ${projPath} && npm publish`);
