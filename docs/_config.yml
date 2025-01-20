@@ -1,2 +1,20 @@
 # https://jekyllrb.com/docs/configuration/
 theme: jekyll-theme-midnight
+title: "Sridhar Mallela"
+description: "I am a Front-End / Full-Stack Developer. I like learning new technologies, continue challenging myself, and do interesting things that matter."
+email: "sridhar4coding@gmail.com"
+url: "http://sridharmallela.github.io/smallela-workspace"
+baseurl: ""
+github_repo: "https://github.com/sridharmallela/sridharmallela.github.io.git"
+github_main: "https://github.com/sridharmallela"
+author: "Sridhar Mallela"
+npm: "https://www.npmjs.com/~tpt2dfw"
+
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+lsi: false
+incremental: false
+kramdown:
+  input: GFM
+  toc_levels: [1, 2, 3, 4, 5, 6]
