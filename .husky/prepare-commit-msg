@@ -1,2 +1,12 @@
-npx --no -- commitlint --edit "$1"
-npx --no -- lint-staged
+## NOTE: PLEASE DON'T EDIT OR MODIFY THIS FILE ON LOCAL
+## WARNING: EVEN IF FILE EDITED, THE PR PROCESS and JENKINS JOB WILL VALIDATE COMMITS
+
+BRANCH_NAME=$(git branch | grep '*' | sed 's/* //')
+
+# DON'T RUN COMMIT HOOK on merge commits or rebasing
+if [ -z $BRANCH_NAME ] || [ $BRANCH_NAME == *"no branch, rebasing"* ] || [ $(git rev-parse -q --verify MERGE_HEAD) ]; then
+  exit 0
+else
+  npx --no -- commitlint --edit "$1"
+  npx --no -- lint-staged
+fi

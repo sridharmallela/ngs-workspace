@@ -1,4 +1,16 @@
 {
+  "[html]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": "never"
+    }
+  },
+  "[ignore][json][jsonc]": {
+    "editor.renderFinalNewline": "off",
+    "files.insertFinalNewline": false
+  },
+  "[javascript][javascriptreact]": {
+    "editor.suggest.showKeywords": false
+  },
   "[json]": {
     "editor.quickSuggestions": {
       "strings": true
@@ -6,12 +18,25 @@
     "editor.suggest.insertMode": "replace"
   },
   "[markdown]": {
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "off",
+      "strings": "off"
+    }
   },
+  "[typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "cSpell.allowCompoundWords": true,
+  "cSpell.diagnosticLevel": "Warning",
   "cSpell.words": ["Buildable", "Mallela", "Sridhar"],
   "diffEditor.ignoreTrimWhitespace": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
     "source.fixAll.eslint": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -22,11 +47,14 @@
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.rulers": [80],
+  "editor.scrollBeyondLastLine": false,
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "errorLens.fontStyleItalic": true,
+  "errorLens.gutterIconSet": "defaultOutline",
+  "errorLens.gutterIconsEnabled": true,
   "eslint.run": "onSave",
   "eslint.validate": [
     "javascript",
@@ -40,10 +68,13 @@
   ],
   "files.associations": {
     ".eslintrc": "json",
-    ".prettierrc": "json"
+    ".npmrc": "properties",
+    ".prettierrc": "json",
+    "prepare-commit-msg": "shellscript"
   },
   "files.autoSave": "onFocusChange",
   "files.autoSaveDelay": 5000,
+  "files.eol": "\n",
   "files.exclude": {
     "**/.angular": true,
     "**/.nx": true,
@@ -71,11 +102,23 @@
     "**/node_modules": true
   },
   "git.ignoreMissingGitWarning": true,
+  "html.format.extraLiners": "",
   "html.format.indentInnerHtml": true,
   "html.format.maxPreserveNewLines": 1,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.schemas": [
+    {
+      "fileMatch": ["cypress.json"],
+      "url": "https://on.cypress.io/cypress.schema.json"
+    },
+    {
+      "fileMatch": [".prettierrc.json", ".prettierrc"],
+      "url": "http://json.schemastore.org/prettierrc"
+    }
+  ],
   "terminal.explorerKind": "external",
   "todo-tree.general.tags": ["FIX-ME", "TODO", "// //", "NOTE"],
+  "typescript.locale": "en",
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "zenMode.hideLineNumbers": false,

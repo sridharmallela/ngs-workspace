@@ -37,9 +37,10 @@ try {
     const npmTag = getLatestTag(pkgName);
     debug(`${proj} >> npmTag: ${npmTag}`);
     if (gt(pkgTag, npmTag)) {
-      info(`${proj} >> copying ".npmrc", ".npmignore"`);
+      info(`${proj} >> copying ".npmrc", ".npmignore", "${proj}.md"`);
       execSync(`cp ${workspace}/.npmrc ${projPath}`);
       execSync(`cp ${workspace}/.npmignore ${projPath}`);
+      execSync(`cp ${workspace}/docs/${proj}.md ${projPath}/README.md`);
       debug(`${proj} >> Executing "cd ${projPath} && npm publish"`);
       execSync(`cd ${projPath} && npm publish`);
       info(`Completed npm publish for ${proj} and tag is v${pkgTag}`);

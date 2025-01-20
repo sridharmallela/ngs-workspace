@@ -1,4 +1,6 @@
-# EditorConfig is awesome: https://EditorConfig.org
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# https://editorconfig.org/#overview
 
 # top-most EditorConfig file
 root = true
@@ -13,7 +15,7 @@ insert_final_newline = true
 max_line_length = 80
 trim_trailing_whitespace = true
 
-[*.{js,cjs,mjs,ts}]
+[*.{js,cjs,mjs,ts,cts,mts}]
 quote_type = single
 
 [*.md]
