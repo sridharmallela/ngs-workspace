@@ -1,6 +1,6 @@
 {
   "name": "jest-preset-smallela",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "jest preset for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -20,7 +20,17 @@
   "config": {
     "unsafe-perm": true
   },
-  "keywords": [],
+  "keywords": [
+    "jest",
+    "jest config",
+    "jest-config",
+    "preset",
+    "jest preset",
+    "jest-preset",
+    "smallela",
+    "sridhar",
+    "mallela"
+  ],
   "peerDependencies": {
     "tslib": ">=2"
   },

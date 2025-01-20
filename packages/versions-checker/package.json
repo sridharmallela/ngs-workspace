@@ -23,7 +23,18 @@
   "bin": {
     "versions-checker": "./dist/index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "versions-checker",
+    "versions",
+    "checker",
+    "npm version",
+    "node version",
+    "yarn version",
+    "eslint version",
+    "smallela",
+    "sridhar",
+    "mallela"
+  ],
   "peerDependencies": {
     "tslib": ">=2"
   },

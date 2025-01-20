@@ -1,6 +1,6 @@
 {
   "name": "print-cli",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "print command line interface",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -23,7 +23,16 @@
   "bin": {
     "print-cli": "./dist/index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "print",
+    "print cli",
+    "print-cli",
+    "figlet",
+    "crazy print",
+    "smallela",
+    "sridhar",
+    "mallela"
+  ],
   "peerDependencies": {
     "tslib": ">=2"
   },

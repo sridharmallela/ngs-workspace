@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-smallela",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "prettier configs for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -20,7 +20,14 @@
   "config": {
     "unsafe-perm": true
   },
-  "keywords": [],
+  "keywords": [
+    "prettier",
+    "prettier config",
+    "prettier-config",
+    "smallela",
+    "sridhar",
+    "mallela"
+  ],
   "peerDependencies": {
     "prettier": ">=3.4",
     "tslib": ">=2"
