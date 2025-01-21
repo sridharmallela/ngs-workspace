@@ -1,6 +1,6 @@
 {
   "name": "nx-commands-smallela",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Reusable commands for NPM",
   "author": "Sridhar Mallela",
   "license": "MIT",

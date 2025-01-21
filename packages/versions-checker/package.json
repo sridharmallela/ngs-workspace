@@ -1,6 +1,6 @@
 {
   "name": "versions-checker",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "check installed versions of node, npm, yarn, and git",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -39,7 +39,7 @@
     "tslib": ">=2"
   },
   "dependencies": {
-    "commander": ">=13",
+    "commander": ">=13.1",
     "semver": ">=7.6"
   }
 }

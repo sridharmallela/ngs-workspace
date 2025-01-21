@@ -19,13 +19,6 @@
     }
   },
   "targetDefaults": {
-    "build": {
-      "cache": true,
-      "outputs": [
-        "{workspaceRoot}/dist/{projectRoot}",
-        "{workspaceRoot}/out-tsc/{projectRoot}"
-      ]
-    },
     "lint": {
       "cache": true,
       "outputs": ["{options.outputFile}"],
