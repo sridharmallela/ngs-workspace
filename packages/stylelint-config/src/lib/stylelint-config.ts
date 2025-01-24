@@ -13,7 +13,9 @@ export const STYLE_LINT_CONFIG = {
     ],
     'at-rule-no-unknown': [
       true,
-      { ignoreAtRules: ['include', 'extend', 'keyframes'] }
+      {
+        ignoreAtRules: ['include', 'extend', 'keyframes']
+      }
     ],
     'block-no-empty': true,
     'color-hex-length': 'short',
@@ -36,7 +38,9 @@ export const STYLE_LINT_CONFIG = {
     ],
     'declaration-block-no-duplicate-properties': [
       true,
-      { ignore: ['consecutive-duplicates-with-different-values'] }
+      {
+        ignore: ['consecutive-duplicates-with-different-values']
+      }
     ],
     'declaration-block-no-shorthand-property-overrides': true,
     'declaration-block-single-line-max-declarations': 1,
@@ -56,7 +60,12 @@ export const STYLE_LINT_CONFIG = {
     'function-url-quotes': 'always',
     'function-whitespace-after': 'always',
     'keyframe-declaration-no-important': true,
-    'length-zero-no-unit': [true, { ignore: ['custom-properties'] }],
+    'length-zero-no-unit': [
+      true,
+      {
+        ignore: ['custom-properties']
+      }
+    ],
     'media-feature-name-no-unknown': true,
     'no-duplicate-at-import-rules': true,
     'no-duplicate-selectors': true,
@@ -65,20 +74,21 @@ export const STYLE_LINT_CONFIG = {
     'property-no-unknown': true,
     'rule-empty-line-before': [
       'always-multi-line',
-      { except: ['after-single-line-comment'], ignore: ['after-comment'] }
+      {
+        except: ['after-single-line-comment'],
+        ignore: ['after-comment']
+      }
     ],
     'selector-attribute-quotes': 'always',
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-colon-notation': 'single',
     'selector-pseudo-element-no-unknown': [
       true,
-      { ignorePseudoElements: ['ng-deep'] }
+      {
+        ignorePseudoElements: ['ng-deep']
+      }
     ],
     'selector-type-case': 'lower',
-    'selector-type-no-unknown': [
-      true,
-      { ignoreTypes: ['/^mat-/', '/^ng-/', '/^pvd-/', '/^pwe-/'] }
-    ],
     'string-no-newline': true
   },
   ignoreFiles: ['**/*.js']

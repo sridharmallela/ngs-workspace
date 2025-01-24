@@ -68,11 +68,6 @@ describe('Style Lint Config ---', () => {
         rule: 'selector-pseudo-element-no-unknown',
         val: { ignorePseudoElements: ['ng-deep'] },
         opts: true
-      },
-      {
-        rule: 'selector-type-no-unknown',
-        val: { ignoreTypes: ['/^mat-/', '/^ng-/', '/^pvd-/', '/^pwe-/'] },
-        opts: true
       }
     ])('"$rule"', ({ rule, val, opts }) => {
       expect(rules[rule]).toBeDefined();
