@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-smallela",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Configuration for ESLint",
   "author": "Sridhar Mallela",
   "license": "MIT",
