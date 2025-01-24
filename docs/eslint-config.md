@@ -13,9 +13,80 @@ permalink: '/eslint-config'
 <!-- TOC -->
 
 - [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Typescript](#typescript)
+  - [Jest](#jest)
 - [License](#license)
 
 <!-- /TOC -->
+
+## Installation
+
+```bash
+  $ npm i --save-dev eslint eslint-config-smallela
+```
+
+```bash
+  $ yarn add --dev eslint eslint-config-smallela
+```
+
+## Usage
+
+- create/update `.eslintrc` on workspace root
+- Extend the default ESLint Configuration, add below
+
+```json
+{
+  "extends": ["eslint-smallela-config/dist/lib/recommended-js"]
+}
+```
+
+### Typescript
+
+- For typescript, its mandatory to install these additional modules, which runs validation on typescript files
+
+```bash
+  $ npm i --save-dev eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+```bash
+  $ yarn add --dev eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+- create/update `.eslintrc` on workspace root
+- Extend the default ESLint Configuration, add below
+
+```json
+{
+  "extends": ["eslint-smallela-config/dist/lib/recommended-ts"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "import"]
+}
+```
+
+### Jest
+
+- For Jest, its mandatory to install these additional modules
+
+```bash
+  $ npm i --save-dev eslint-plugin-jest eslint-plugin-jest-formatting
+```
+
+- create/update `.eslintrc.json` on workspace root
+- Extend the default ESLint Configuration, add below
+
+```json
+{
+  "overrides": [
+    {
+      "files": ["**/*.{s,S}pec.{j,t}s?(x)"],
+      "extends": ["eslint-smallela-config/dist/lib/recommended-jest"],
+      "rules": {}
+    }
+  ]
+}
+```
 
 ## License
 
