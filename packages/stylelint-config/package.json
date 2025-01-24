@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-smallela",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Configuration for Stylelint",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -33,6 +33,11 @@
     "stylelint",
     "stylelint config",
     "stylelint-config",
+    "Style Lint",
+    "CSS Lint",
+    "SCSS Lint",
+    "SASS Lint",
+    "Less Lint",
     "smallela",
     "sridhar",
     "mallela"

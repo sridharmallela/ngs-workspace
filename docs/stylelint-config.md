@@ -13,9 +13,34 @@ permalink: '/stylelint-config'
 <!-- TOC -->
 
 - [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
 - [License](#license)
 
 <!-- /TOC -->
+
+## Installation
+
+```bash
+  $ npm i --save-dev stylelint stylelint-config-smallela
+```
+
+```bash
+  $ yarn add --dev stylelint stylelint-config-smallela
+```
+
+## Usage
+
+- create/update `.stylelintrc` or `stylelint.config.js` on workspace root
+- Extend the default StyleLint Configuration, add below
+
+```json
+{
+  "extends": ["stylelint-config-smallela"]
+}
+```
+
+For more information on [how to configure stylelint](https://stylelint.io/user-guide/configure)
 
 ## License
 
