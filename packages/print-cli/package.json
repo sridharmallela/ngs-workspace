@@ -1,6 +1,6 @@
 {
   "name": "print-cli",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "description": "print command line interface",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -16,6 +16,11 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
+    },
+    "./printer": {
+      "types": "./dist/lib/printer.d.ts",
+      "import": "./dist/lib/printer.js",
+      "default": "./dist/lib/printer.js"
     }
   },
   "repository": {

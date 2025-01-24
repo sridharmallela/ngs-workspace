@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-smallela",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Configuration for Stylelint",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -16,6 +16,11 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
+    },
+    "./config": {
+      "types": "./dist/lib/stylelint-config.d.ts",
+      "import": "./dist/lib/stylelint-config.js",
+      "default": "./dist/lib/stylelint-config.js"
     }
   },
   "repository": {

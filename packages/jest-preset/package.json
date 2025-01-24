@@ -1,6 +1,6 @@
 {
   "name": "jest-preset-smallela",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "jest preset for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -18,9 +18,9 @@
       "default": "./jest-preset.cjs"
     },
     "./config": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "default": "./dist/index.js"
+      "types": "./dist/lib/preset-rules.d.ts",
+      "import": "./dist/lib/preset-rules.js",
+      "default": "./dist/lib/preset-rules.js"
     }
   },
   "repository": {
