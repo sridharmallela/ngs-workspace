@@ -38,7 +38,7 @@ permalink: '/eslint-config'
 
 ```json
 {
-  "extends": ["eslint-smallela-config/dist/lib/recommended-js"]
+  "extends": ["eslint-config-smallela/dist/lib/recommended-js"]
 }
 ```
 
@@ -59,7 +59,7 @@ permalink: '/eslint-config'
 
 ```json
 {
-  "extends": ["eslint-smallela-config/dist/lib/recommended-ts"],
+  "extends": ["eslint-config-smallela/dist/lib/recommended"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "import"]
 }
@@ -73,6 +73,10 @@ permalink: '/eslint-config'
   $ npm i --save-dev eslint-plugin-jest eslint-plugin-jest-formatting
 ```
 
+```bash
+  $ yarn add --dev eslint-plugin-jest eslint-plugin-jest-formatting
+```
+
 - create/update `.eslintrc.json` on workspace root
 - Extend the default ESLint Configuration, add below
 
@@ -81,7 +85,10 @@ permalink: '/eslint-config'
   "overrides": [
     {
       "files": ["**/*.{s,S}pec.{j,t}s?(x)"],
-      "extends": ["eslint-smallela-config/dist/lib/recommended-jest"],
+      "extends": [
+        "eslint-config-smallela/dist/lib/recommended",
+        "eslint-config-smallela/dist/lib/recommended-jest"
+      ],
       "rules": {}
     }
   ]

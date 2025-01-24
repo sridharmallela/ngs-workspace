@@ -1,6 +1,6 @@
 import { jestConfig } from './rules/jest';
 
-export default {
+export = {
   env: {
     'jest/globals': true
   },

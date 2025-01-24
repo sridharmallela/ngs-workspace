@@ -4,7 +4,7 @@ import { standardsConfig, standardsIgnore } from './rules/standards';
 
 import { ignoresConfigAndTests } from './rules/matchers';
 
-export default {
+export = {
   rules: {
     ...standardsConfig,
     ...errorsConfig,

@@ -6,7 +6,7 @@ import { tsConfig, tsIgnore } from './rules/typescript';
 
 import { ignoresConfigAndTests } from './rules/matchers';
 
-export default {
+export = {
   rules: {
     ...standardsConfig,
     ...errorsConfig,
