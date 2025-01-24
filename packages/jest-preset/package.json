@@ -1,14 +1,28 @@
 {
   "name": "jest-preset-smallela",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "jest preset for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
   "homepage": "https://sridharmallela.github.io/smallela-workspace/jest-preset/",
   "type": "commonjs",
   "main": "./jest-preset.cjs",
+  "module": "./jest-preset.cjs",
   "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./jest-preset.cjs",
+      "default": "./jest-preset.cjs"
+    },
+    "./config": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sridharmallela/smallela-workspace.git",

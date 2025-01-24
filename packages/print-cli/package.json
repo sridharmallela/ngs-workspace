@@ -1,14 +1,23 @@
 {
   "name": "print-cli",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "print command line interface",
   "author": "Sridhar Mallela",
   "license": "MIT",
   "homepage": "https://sridharmallela.github.io/smallela-workspace/print-cli/",
   "type": "commonjs",
   "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sridharmallela/smallela-workspace.git",
