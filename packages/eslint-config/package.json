@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-smallela",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Configuration for ESLint",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -15,10 +15,22 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "default": "./dist/index.js",
-      "recommended": "./dist/lib/recommended",
-      "recommended-jest": "./dist/lib/recommended-jest",
-      "recommended-js": "./dist/lib/recommended-js"
+      "default": "./dist/index.js"
+    },
+    "./recommended": {
+      "types": "./dist/recommended.d.ts",
+      "import": "./dist/lib/recommended.js",
+      "default": "./dist/lib/recommended.js"
+    },
+    "./recommended-jest": {
+      "types": "./dist/recommended-jest.d.ts",
+      "import": "./dist/lib/recommended-jest.js",
+      "default": "./dist/lib/recommended-jest.js"
+    },
+    "./recommended-js": {
+      "types": "./dist/recommended-js.d.ts",
+      "import": "./dist/lib/recommended-js.js",
+      "default": "./dist/lib/recommended-js.js"
     }
   },
   "repository": {
