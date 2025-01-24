@@ -38,7 +38,7 @@ permalink: '/eslint-config'
 
 ```json
 {
-  "extends": ["eslint-config-smallela/dist/lib/recommended-js"]
+  "extends": ["eslint-config-smallela/recommended-js"]
 }
 ```
 
@@ -59,7 +59,7 @@ permalink: '/eslint-config'
 
 ```json
 {
-  "extends": ["eslint-config-smallela/dist/lib/recommended"],
+  "extends": ["eslint-config-smallela/recommended"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "import"]
 }
@@ -86,8 +86,8 @@ permalink: '/eslint-config'
     {
       "files": ["**/*.{s,S}pec.{j,t}s?(x)"],
       "extends": [
-        "eslint-config-smallela/dist/lib/recommended",
-        "eslint-config-smallela/dist/lib/recommended-jest"
+        "eslint-config-smallela/recommended",
+        "eslint-config-smallela/recommended-jest"
       ],
       "rules": {}
     }
