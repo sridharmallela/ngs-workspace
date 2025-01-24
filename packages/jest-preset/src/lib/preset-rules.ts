@@ -37,7 +37,7 @@ const JEST_CONFIG_SMALLELA = {
     }
   },
   errorOnDeprecated: true,
-  moduleFileExtensions: ['js', 'cjs', 'mjs', 'json', 'ts'],
+  moduleFileExtensions: ['cjs', 'cts', 'js', 'json', 'mjs', 'mts', 'ts'],
   slowTestThreshold: 5,
   testTimeout: 20000,
   testEnvironment: 'node',

@@ -37,7 +37,7 @@ describe('Prettier Config ---', () => {
         }
       },
       errorOnDeprecated: true,
-      moduleFileExtensions: ['js', 'cjs', 'mjs', 'json', 'ts'],
+      moduleFileExtensions: ['cjs', 'cts', 'js', 'json', 'mjs', 'mts', 'ts'],
       slowTestThreshold: 5,
       testEnvironment: 'node',
       testMatch: ['**/?(*.)+(spec|test|e2e).[tj]s?(x)'],

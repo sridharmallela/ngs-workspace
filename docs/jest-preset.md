@@ -25,7 +25,11 @@ An opinionated [Jest preset](http://facebook.github.io/jest/docs/en/configuratio
 ## Installation
 
 ```bash
-$ npm i --save-dev jest jest-preset-smallela
+  $ npm i --save-dev jest jest-preset-smallela
+```
+
+```bash
+  $ yarn add --dev jest jest-preset-smallela
 ```
 
 ## Usage
