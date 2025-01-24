@@ -10,6 +10,8 @@ permalink: '/nx-commands'
 
 This module exports all the commands that Nx supports programmatically.
 
+## Table of Contents
+
 <!-- TOC -->
 
 - [Table of Contents](#table-of-contents)
@@ -17,14 +19,16 @@ This module exports all the commands that Nx supports programmatically.
 - [Usage](#usage)
 - [License](#license)
 
-<!-- /TOC -->license)
-
 <!-- /TOC -->
 
 ## Installation
 
 ```bash
   $ npm i --save-dev nx-commands-smallela
+```
+
+```bash
+  $ yarn add --dev nx-commands-smallela
 ```
 
 ## Usage

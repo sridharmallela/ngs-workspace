@@ -34,7 +34,11 @@ This package is a [`commitlint`](https://github.com/conventional-changelog/commi
 ## Installation
 
 ```bash
-$ npm i --save-dev commitlint-config-smallela
+  $ npm i --save-dev commitlint-config-smallela
+```
+
+```bash
+  $ yarn add --dev commitlint-config-smallela
 ```
 
 ## Usage

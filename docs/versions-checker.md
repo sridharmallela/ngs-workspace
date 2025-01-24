@@ -34,6 +34,10 @@ Check installed versions of node, npm, yarn, and git
   $ npm i --save-dev versions-checker
 ```
 
+```bash
+  $ yarn add --dev versions-checker
+```
+
 ## Usage
 
 ```bash

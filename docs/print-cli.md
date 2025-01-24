@@ -32,6 +32,10 @@ Generate a printable representation of ASCII text. Thanks to [Figlet](https://ww
   $ npm i --save-dev print-cli
 ```
 
+```bash
+  $ yarn add --dev print-cli
+```
+
 ## Usage
 
 ```bash

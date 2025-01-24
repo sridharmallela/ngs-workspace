@@ -25,6 +25,10 @@ permalink: '/npm-commands'
   $ npm i --save-dev npm-commands-smallela
 ```
 
+```bash
+  $ yarn add --dev npm-commands-smallela
+```
+
 ## Usage
 
 ```ts
