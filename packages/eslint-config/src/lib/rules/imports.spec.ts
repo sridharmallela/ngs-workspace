@@ -29,7 +29,8 @@ describe('Error Rules ---', () => {
     test.each([
       'import/no-duplicates',
       'import/no-mutable-exports',
-      'import/no-named-as-default'
+      'import/no-named-as-default',
+      'import/no-unresolved'
     ])('for "%s"', rule => {
       expect(importsIgnore[rule]).toEqual('off');
     });

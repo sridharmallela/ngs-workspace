@@ -14,13 +14,13 @@ const tsConfig = {
     'error',
     {
       selector: 'variableLike',
-      format: ['camelCase', 'UPPER_CASE'],
+      format: ['camelCase', 'PascalCase', 'snake_case', 'UPPER_CASE'],
       leadingUnderscore: 'forbid',
       trailingUnderscore: 'forbid'
     },
     {
       selector: 'typeLike',
-      format: ['PascalCase']
+      format: ['camelCase', 'PascalCase']
     },
     {
       selector: 'function',
@@ -28,8 +28,6 @@ const tsConfig = {
       format: ['camelCase', 'PascalCase']
     }
   ],
-  // https://typescript-eslint.io/rules/no-extra-semi
-  '@typescript-eslint/no-extra-semi': 'error',
   // https://typescript-eslint.io/rules/no-import-type-side-effects
   '@typescript-eslint/no-import-type-side-effects': 'error',
   // https://typescript-eslint.io/rules/no-inferrable-types

@@ -42,7 +42,7 @@ describe('JS Doc ---', () => {
         rule: '@typescript-eslint/naming-convention',
         opts: {
           selector: 'variableLike',
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase', 'PascalCase', 'snake_case', 'UPPER_CASE'],
           leadingUnderscore: 'forbid',
           trailingUnderscore: 'forbid'
         }

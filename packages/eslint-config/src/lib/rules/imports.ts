@@ -25,7 +25,9 @@ const importsIgnore: Record<string, string> = {
   // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-mutable-exports.md
   'import/no-mutable-exports': 'off',
   // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-named-as-default.md
-  'import/no-named-as-default': 'off'
+  'import/no-named-as-default': 'off',
+  // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
+  'import/no-unresolved': 'off'
 };
 
 export { importsConfig, importsIgnore };
