@@ -13,7 +13,16 @@ describe('Prettier Config ---', () => {
       jsxSingleQuote: false,
       overrides: [
         {
-          files: ['*.ts', '*.tsx', '*.js', '*.jsx', '*.mjs', '*.cjs'],
+          files: [
+            '*.cjs',
+            '*.cts',
+            '*.js',
+            '*.jsx',
+            '*.mjs',
+            '*.mts',
+            '*.ts',
+            '*.tsx'
+          ],
           options: { jsxSingleQuote: true }
         },
         { files: ['*.html', '*.yml'], options: { singleQuote: false } },

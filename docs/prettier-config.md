@@ -24,7 +24,11 @@ A **[Prettier](https://prettier.io/)** [shareable config](https://prettier.io/do
 ## Installation
 
 ```bash
-$ npm i --save-dev prettier prettier-config-smallela
+  $ npm i --save-dev prettier prettier-config-smallela
+```
+
+```bash
+  $ yarn add --dev prettier prettier-config-smallela
 ```
 
 ## Usage
