@@ -4,6 +4,7 @@ describe('Prettier Config ---', () => {
   test('for valid', () => {
     expect(prettierConfig).toBeDefined();
     expect(prettierConfig).toEqual({
+      $schema: 'http://json.schemastore.org/prettierrc',
       arrowParens: 'avoid',
       bracketSameLine: true,
       bracketSpacing: true,
@@ -25,9 +26,27 @@ describe('Prettier Config ---', () => {
           ],
           options: { jsxSingleQuote: true }
         },
-        { files: ['*.html', '*.yml'], options: { singleQuote: false } },
-        { files: ['*.hbs'], options: { parser: 'lwc', singleQuote: false } },
-        { files: ['*.md'], options: { proseWrap: 'never' } },
+        {
+          files: [
+            '*.htm',
+            '*.html',
+            '*.shtm',
+            '*.shtml',
+            '*.xhtm',
+            '*.xhtml',
+            '*.yaml',
+            '*.yml'
+          ],
+          options: { singleQuote: false }
+        },
+        {
+          files: ['*.ejs', '*.handlebars', '*.hbs'],
+          options: { parser: 'lwc', singleQuote: false }
+        },
+        {
+          files: ['*.md', '*.mdx', '*.markdown'],
+          options: { parser: 'mdx', proseWrap: 'never' }
+        },
         {
           files: [
             '*.code-snippets',
@@ -40,6 +59,7 @@ describe('Prettier Config ---', () => {
           ],
           options: { parser: 'json' }
         },
+        { files: '*.svg', options: { parser: 'html' } },
         {
           files: ['*.xml'],
           options: {

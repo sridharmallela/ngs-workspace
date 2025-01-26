@@ -1,6 +1,7 @@
 import type { Config } from 'prettier';
 
 const prettierConfig: Config = {
+  $schema: 'http://json.schemastore.org/prettierrc',
   arrowParens: 'avoid',
   bracketSameLine: true,
   bracketSpacing: true,
@@ -35,21 +36,31 @@ const prettierConfig: Config = {
       }
     },
     {
-      files: ['*.html', '*.yml'],
+      files: [
+        '*.htm',
+        '*.html',
+        '*.shtm',
+        '*.shtml',
+        '*.xhtm',
+        '*.xhtml',
+        '*.yaml',
+        '*.yml'
+      ],
       options: {
         singleQuote: false
       }
     },
     {
-      files: ['*.hbs'],
+      files: ['*.ejs', '*.handlebars', '*.hbs'],
       options: {
         parser: 'lwc',
         singleQuote: false
       }
     },
     {
-      files: ['*.md'],
+      files: ['*.md', '*.mdx', '*.markdown'],
       options: {
+        parser: 'mdx',
         proseWrap: 'never'
       }
     },
@@ -65,6 +76,12 @@ const prettierConfig: Config = {
       ],
       options: {
         parser: 'json'
+      }
+    },
+    {
+      files: '*.svg',
+      options: {
+        parser: 'html'
       }
     },
     {
