@@ -16,7 +16,9 @@ const importsConfig = {
   // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-named-as-default-member.md
   'import/no-named-as-default-member': 'error',
   // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-self-import.md
-  'import/no-self-import': 'error'
+  'import/no-self-import': 'error',
+  // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
+  'import/no-unresolved': 'off'
 };
 
 const importsIgnore: Record<string, string> = {
@@ -25,9 +27,7 @@ const importsIgnore: Record<string, string> = {
   // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-mutable-exports.md
   'import/no-mutable-exports': 'off',
   // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-named-as-default.md
-  'import/no-named-as-default': 'off',
-  // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
-  'import/no-unresolved': 'off'
+  'import/no-named-as-default': 'off'
 };
 
 export { importsConfig, importsIgnore };

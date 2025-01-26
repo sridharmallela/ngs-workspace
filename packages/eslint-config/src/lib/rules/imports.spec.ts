@@ -23,14 +23,17 @@ describe('Error Rules ---', () => {
     ])('for"%s"', rule => {
       expect(testCandidate[rule]).toEqual('error');
     });
+
+    test('for "import/no-unresolved"', () => {
+      expect(testCandidate['import/no-unresolved']).toEqual('off');
+    });
   });
 
   describe('should test importsIgnore ---', () => {
     test.each([
       'import/no-duplicates',
       'import/no-mutable-exports',
-      'import/no-named-as-default',
-      'import/no-unresolved'
+      'import/no-named-as-default'
     ])('for "%s"', rule => {
       expect(importsIgnore[rule]).toEqual('off');
     });
