@@ -1,6 +1,6 @@
 {
   "name": "print-cli",
-  "version": "2.1.10",
+  "version": "2.1.11",
   "description": "print command line interface",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -10,19 +10,6 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
-  "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "default": "./dist/index.js"
-    },
-    "./printer": {
-      "types": "./dist/lib/printer.d.ts",
-      "import": "./dist/lib/printer.js",
-      "default": "./dist/lib/printer.js"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sridharmallela/ngs-workspace.git",
