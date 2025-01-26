@@ -4,9 +4,9 @@ title: 'npm Commands'
 permalink: '/npm-commands'
 ---
 
-[![npm](https://img.shields.io/npm/v/npm-commands-smallela.svg?style=plastic)](https://www.npmjs.com/package/npm-commands-smallela) [![npm](https://img.shields.io/npm/dw/npm-commands-smallela.svg?style=plastic)](https://www.npmjs.com/package/npm-commands-smallela) [![npm](https://img.shields.io/npm/dm/npm-commands-smallela.svg?style=plastic)](https://www.npmjs.com/package/npm-commands-smallela) [![npm](https://img.shields.io/npm/dy/npm-commands-smallela.svg?style=plastic)](https://www.npmjs.com/package/npm-commands-smallela) [![npm](https://img.shields.io/npm/dt/npm-commands-smallela.svg?style=plastic)](https://www.npmjs.com/package/npm-commands-smallela)
+[![npm](https://img.shields.io/npm/v/npm-commands-ngs.svg?style=plastic)](https://www.npmjs.com/package/npm-commands-ngs) [![npm](https://img.shields.io/npm/dw/npm-commands-ngs.svg?style=plastic)](https://www.npmjs.com/package/npm-commands-ngs) [![npm](https://img.shields.io/npm/dm/npm-commands-ngs.svg?style=plastic)](https://www.npmjs.com/package/npm-commands-ngs) [![npm](https://img.shields.io/npm/dy/npm-commands-ngs.svg?style=plastic)](https://www.npmjs.com/package/npm-commands-ngs) [![npm](https://img.shields.io/npm/dt/npm-commands-ngs.svg?style=plastic)](https://www.npmjs.com/package/npm-commands-ngs)
 
-[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/ngs-workspace/main/LICENSE)
 
 ## Table of Contents
 
@@ -22,17 +22,17 @@ permalink: '/npm-commands'
 ## Installation
 
 ```bash
-  $ npm i --save-dev npm-commands-smallela
+  $ npm i --save-dev npm-commands-ngs
 ```
 
 ```bash
-  $ yarn add --dev npm-commands-smallela
+  $ yarn add --dev npm-commands-ngs
 ```
 
 ## Usage
 
 ```ts
-import { NpmCommands } from 'npm-commands-smallela';
+import { NpmCommands } from 'npm-commands-ngs';
 
 // get package view by executing `npm view
 NpmCommands.getPackageView('print-cli');

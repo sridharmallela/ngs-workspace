@@ -4,9 +4,9 @@ title: 'Jest Preset'
 permalink: '/jest-prest'
 ---
 
-[![npm](https://img.shields.io/npm/v/jest-preset-smallela.svg?style=plastic)](https://www.npmjs.com/package/jest-preset-smallela) [![npm](https://img.shields.io/npm/dw/jest-preset-smallela.svg?style=plastic)](https://www.npmjs.com/package/jest-preset-smallela) [![npm](https://img.shields.io/npm/dm/jest-preset-smallela.svg?style=plastic)](https://www.npmjs.com/package/jest-preset-smallela) [![npm](https://img.shields.io/npm/dy/jest-preset-smallela.svg?style=plastic)](https://www.npmjs.com/package/jest-preset-smallela) [![npm](https://img.shields.io/npm/dt/jest-preset-smallela.svg?style=plastic)](https://www.npmjs.com/package/jest-preset-smallela)
+[![npm](https://img.shields.io/npm/v/jest-preset-ngs.svg?style=plastic)](https://www.npmjs.com/package/jest-preset-ngs) [![npm](https://img.shields.io/npm/dw/jest-preset-ngs.svg?style=plastic)](https://www.npmjs.com/package/jest-preset-ngs) [![npm](https://img.shields.io/npm/dm/jest-preset-ngs.svg?style=plastic)](https://www.npmjs.com/package/jest-preset-ngs) [![npm](https://img.shields.io/npm/dy/jest-preset-ngs.svg?style=plastic)](https://www.npmjs.com/package/jest-preset-ngs) [![npm](https://img.shields.io/npm/dt/jest-preset-ngs.svg?style=plastic)](https://www.npmjs.com/package/jest-preset-ngs)
 
-[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/ngs-workspace/main/LICENSE)
 
 An opinionated [Jest preset](http://facebook.github.io/jest/docs/en/configuration.html#preset-string)
 
@@ -25,11 +25,11 @@ An opinionated [Jest preset](http://facebook.github.io/jest/docs/en/configuratio
 ## Installation
 
 ```bash
-  $ npm i --save-dev jest jest-preset-smallela
+  $ npm i --save-dev jest jest-preset-ngs
 ```
 
 ```bash
-  $ yarn add --dev jest jest-preset-smallela
+  $ yarn add --dev jest jest-preset-ngs
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ In your [Jest configuration][]
 
 ```json
 {
-  "preset": "jest-preset-smallela"
+  "preset": "jest-preset-ngs"
 }
 ```
 

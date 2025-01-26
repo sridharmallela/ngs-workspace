@@ -1,1 +1,1 @@
-module.exports = require('./dist/index').JEST_CONFIG_SMALLELA;
+module.exports = require('./dist/index').JEST_CONFIG_NGS;

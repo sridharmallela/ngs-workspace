@@ -2,7 +2,7 @@ import isCI from 'is-ci';
 
 const esModules = ['@commitlint', 'prettier'].join('|');
 
-const JEST_CONFIG_SMALLELA = {
+const JEST_CONFIG_NGS = {
   collectCoverage: true,
   collectCoverageFrom: '<rootDir>/**/*.[jt]s?(x)',
   coverageDirectory: '<rootDir>/coverage',
@@ -55,4 +55,4 @@ const JEST_CONFIG_SMALLELA = {
   verbose: true
 };
 
-export { JEST_CONFIG_SMALLELA };
+export { JEST_CONFIG_NGS };

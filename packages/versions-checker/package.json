@@ -1,10 +1,10 @@
 {
   "name": "versions-checker",
-  "version": "2.1.9",
+  "version": "2.1.10",
   "description": "check installed versions of node, npm, yarn, and git",
   "author": "Sridhar Mallela",
   "license": "MIT",
-  "homepage": "https://sridharmallela.github.io/smallela-workspace/versions-checker/",
+  "homepage": "https://sridharmallela.github.io/ngs-workspace/versions-checker/",
   "type": "commonjs",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -25,11 +25,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sridharmallela/smallela-workspace.git",
+    "url": "git+https://github.com/sridharmallela/ngs-workspace.git",
     "directory": "packages/versions-checker"
   },
   "bugs": {
-    "url": "https://github.com/sridharmallela/smallela-workspace/issues"
+    "url": "https://github.com/sridharmallela/ngs-workspace/issues"
   },
   "config": {
     "unsafe-perm": true

@@ -1,10 +1,10 @@
 {
-  "name": "eslint-config-smallela",
-  "version": "1.0.7",
+  "name": "eslint-config-ngs",
+  "version": "1.0.0",
   "description": "Configuration for ESLint",
   "author": "Sridhar Mallela",
   "license": "MIT",
-  "homepage": "https://sridharmallela.github.io/smallela-workspace/eslint-config/",
+  "homepage": "https://sridharmallela.github.io/ngs-workspace/eslint-config/",
   "type": "commonjs",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -35,11 +35,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sridharmallela/smallela-workspace.git",
+    "url": "git+https://github.com/sridharmallela/ngs-workspace.git",
     "directory": "packages/eslint-config"
   },
   "bugs": {
-    "url": "https://github.com/sridharmallela/smallela-workspace/issues"
+    "url": "https://github.com/sridharmallela/ngs-workspace/issues"
   },
   "config": {
     "unsafe-perm": true

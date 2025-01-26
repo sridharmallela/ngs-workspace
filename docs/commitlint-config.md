@@ -4,9 +4,9 @@ title: 'CommitLint Config'
 permalink: '/commitlint-config'
 ---
 
-[![npm](https://img.shields.io/npm/v/commitlint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-smallela) [![npm](https://img.shields.io/npm/dw/commitlint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-smallela) [![npm](https://img.shields.io/npm/dm/commitlint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-smallela) [![npm](https://img.shields.io/npm/dy/commitlint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-smallela) [![npm](https://img.shields.io/npm/dt/commitlint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-smallela)
+[![npm](https://img.shields.io/npm/v/commitlint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-ngs) [![npm](https://img.shields.io/npm/dw/commitlint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-ngs) [![npm](https://img.shields.io/npm/dm/commitlint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-ngs) [![npm](https://img.shields.io/npm/dy/commitlint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-ngs) [![npm](https://img.shields.io/npm/dt/commitlint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/commitlint-config-ngs)
 
-[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/ngs-workspace/main/LICENSE)
 
 This package is a [`commitlint`](https://github.com/conventional-changelog/commitlint) configuration for commit message conventions and enforcement. It's a modified variation of [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/blob/master/@commitlint/config-conventional), with the following enhancements:
 
@@ -34,11 +34,11 @@ This package is a [`commitlint`](https://github.com/conventional-changelog/commi
 ## Installation
 
 ```bash
-  $ npm i --save-dev commitlint-config-smallela
+  $ npm i --save-dev commitlint-config-ngs
 ```
 
 ```bash
-  $ yarn add --dev commitlint-config-smallela
+  $ yarn add --dev commitlint-config-ngs
 ```
 
 ## Usage
@@ -48,7 +48,7 @@ This package is a [`commitlint`](https://github.com/conventional-changelog/commi
 ```json
 {
   "commitlint": {
-    "extends": ["smallela"]
+    "extends": ["ngs"]
   }
 }
 ```
@@ -57,21 +57,21 @@ This package is a [`commitlint`](https://github.com/conventional-changelog/commi
 
 ```json
 {
-  "extends": ["smallela"]
+  "extends": ["ngs"]
 }
 ```
 
 ### Using `.commitlintrc.yml` file
 
 ```yaml
-extends: [smallela]
+extends: [ngs]
 ```
 
 ### Using `commitlint.config.js`, `.commitlintrc.js` file
 
 ```js
 module.exports = {
-  extends: ['smallela']
+  extends: ['ngs']
 };
 ```
 
@@ -85,7 +85,7 @@ You can override the rules immediately following the `extends` property. See the
 
 ```json
 {
-  "extends": ["smallela"],
+  "extends": ["ngs"],
   "rules": {
     "header-max-length": [0, "always", 100]
   }
@@ -95,7 +95,7 @@ You can override the rules immediately following the `extends` property. See the
 ### Using YAML
 
 ```yaml
-extends: [smallela]
+extends: [ngs]
 rules:
   header-max-length: [0, 'always', 100]
 ```
@@ -104,7 +104,7 @@ rules:
 
 ```js
 module.exports = {
-  extends: ['smallela'],
+  extends: ['ngs'],
   rules: {
     'header-max-length': [0, 'always', 100]
   }

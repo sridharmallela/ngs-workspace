@@ -1,10 +1,10 @@
 {
-  "name": "jest-preset-smallela",
-  "version": "1.2.9",
+  "name": "jest-preset-ngs",
+  "version": "1.0.0",
   "description": "jest preset for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
-  "homepage": "https://sridharmallela.github.io/smallela-workspace/jest-preset/",
+  "homepage": "https://sridharmallela.github.io/ngs-workspace/jest-preset/",
   "type": "commonjs",
   "main": "./jest-preset.cjs",
   "types": "./dist/index.d.ts",
@@ -19,11 +19,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sridharmallela/smallela-workspace.git",
+    "url": "git+https://github.com/sridharmallela/ngs-workspace.git",
     "directory": "packages/jest-preset"
   },
   "bugs": {
-    "url": "https://github.com/sridharmallela/smallela-workspace/issues"
+    "url": "https://github.com/sridharmallela/ngs-workspace/issues"
   },
   "config": {
     "unsafe-perm": true

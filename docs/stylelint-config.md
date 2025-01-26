@@ -4,9 +4,9 @@ title: 'StyleLint Config'
 permalink: '/stylelint-config'
 ---
 
-[![npm](https://img.shields.io/npm/v/stylelint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/stylelint-config-smallela) [![npm](https://img.shields.io/npm/dw/stylelint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/stylelint-config-smallela) [![npm](https://img.shields.io/npm/dm/stylelint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/stylelint-config-smallela) [![npm](https://img.shields.io/npm/dy/stylelint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/stylelint-config-smallela) [![npm](https://img.shields.io/npm/dt/stylelint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/stylelint-config-smallela)
+[![npm](https://img.shields.io/npm/v/stylelint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/stylelint-config-ngs) [![npm](https://img.shields.io/npm/dw/stylelint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/stylelint-config-ngs) [![npm](https://img.shields.io/npm/dm/stylelint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/stylelint-config-ngs) [![npm](https://img.shields.io/npm/dy/stylelint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/stylelint-config-ngs) [![npm](https://img.shields.io/npm/dt/stylelint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/stylelint-config-ngs)
 
-[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/ngs-workspace/main/LICENSE)
 
 ## Table of Contents
 
@@ -22,11 +22,11 @@ permalink: '/stylelint-config'
 ## Installation
 
 ```bash
-  $ npm i --save-dev stylelint stylelint-config-smallela
+  $ npm i --save-dev stylelint stylelint-config-ngs
 ```
 
 ```bash
-  $ yarn add --dev stylelint stylelint-config-smallela
+  $ yarn add --dev stylelint stylelint-config-ngs
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ permalink: '/stylelint-config'
 
 ```json
 {
-  "extends": ["stylelint-config-smallela"]
+  "extends": ["stylelint-config-ngs"]
 }
 ```
 

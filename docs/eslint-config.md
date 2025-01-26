@@ -4,9 +4,9 @@ title: 'ESLint Config'
 permalink: '/eslint-config'
 ---
 
-[![npm](https://img.shields.io/npm/v/eslint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/eslint-config-smallela) [![npm](https://img.shields.io/npm/dw/eslint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/eslint-config-smallela) [![npm](https://img.shields.io/npm/dm/eslint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/eslint-config-smallela) [![npm](https://img.shields.io/npm/dy/eslint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/eslint-config-smallela) [![npm](https://img.shields.io/npm/dt/eslint-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/eslint-config-smallela)
+[![npm](https://img.shields.io/npm/v/eslint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/eslint-config-ngs) [![npm](https://img.shields.io/npm/dw/eslint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/eslint-config-ngs) [![npm](https://img.shields.io/npm/dm/eslint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/eslint-config-ngs) [![npm](https://img.shields.io/npm/dy/eslint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/eslint-config-ngs) [![npm](https://img.shields.io/npm/dt/eslint-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/eslint-config-ngs)
 
-[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/ngs-workspace/main/LICENSE)
 
 ## Table of Contents
 
@@ -24,11 +24,11 @@ permalink: '/eslint-config'
 ## Installation
 
 ```bash
-  $ npm i --save-dev eslint eslint-config-smallela
+  $ npm i --save-dev eslint eslint-config-ngs
 ```
 
 ```bash
-  $ yarn add --dev eslint eslint-config-smallela
+  $ yarn add --dev eslint eslint-config-ngs
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ permalink: '/eslint-config'
 
 ```json
 {
-  "extends": ["eslint-config-smallela/recommended-js"]
+  "extends": ["eslint-config-ngs/recommended-js"]
 }
 ```
 
@@ -59,7 +59,7 @@ permalink: '/eslint-config'
 
 ```json
 {
-  "extends": ["eslint-config-smallela/recommended"],
+  "extends": ["eslint-config-ngs/recommended"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "import"]
 }
@@ -86,8 +86,8 @@ permalink: '/eslint-config'
     {
       "files": ["**/*.{s,S}pec.{j,t}s?(x)"],
       "extends": [
-        "eslint-config-smallela/recommended",
-        "eslint-config-smallela/recommended-jest"
+        "eslint-config-ngs/recommended",
+        "eslint-config-ngs/recommended-jest"
       ],
       "rules": {}
     }

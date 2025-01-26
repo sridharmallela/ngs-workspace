@@ -4,9 +4,9 @@ title: 'Prettier Config'
 permalink: '/prettier-config'
 ---
 
-[![npm](https://img.shields.io/npm/v/prettier-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-smallela) [![npm](https://img.shields.io/npm/dw/prettier-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-smallela) [![npm](https://img.shields.io/npm/dm/prettier-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-smallela) [![npm](https://img.shields.io/npm/dy/prettier-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-smallela) [![npm](https://img.shields.io/npm/dt/prettier-config-smallela.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-smallela)
+[![npm](https://img.shields.io/npm/v/prettier-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-ngs) [![npm](https://img.shields.io/npm/dw/prettier-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-ngs) [![npm](https://img.shields.io/npm/dm/prettier-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-ngs) [![npm](https://img.shields.io/npm/dy/prettier-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-ngs) [![npm](https://img.shields.io/npm/dt/prettier-config-ngs.svg?style=plastic)](https://www.npmjs.com/package/prettier-config-ngs)
 
-[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/ngs-workspace/main/LICENSE)
 
 A **[Prettier](https://prettier.io/)** [shareable config](https://prettier.io/docs/en/configuration.html#sharing-configurations) for web projects.
 
@@ -24,11 +24,11 @@ A **[Prettier](https://prettier.io/)** [shareable config](https://prettier.io/do
 ## Installation
 
 ```bash
-  $ npm i --save-dev prettier prettier-config-smallela
+  $ npm i --save-dev prettier prettier-config-ngs
 ```
 
 ```bash
-  $ yarn add --dev prettier prettier-config-smallela
+  $ yarn add --dev prettier prettier-config-ngs
 ```
 
 ## Usage
@@ -38,9 +38,9 @@ Reference it in `package.json` using the `prettier` property:
 ```json
 {
   "name": "",
-  "prettier": "prettier-config-smallela",
+  "prettier": "prettier-config-ngs",
   "devDependencies": {
-    "prettier-config-smallela": "~1.0.0"
+    "prettier-config-ngs": "~1.0.0"
   }
 }
 ```
@@ -49,12 +49,12 @@ If you don't want to use `package.json`, you can use any of the supported extens
 
 ```jsonc
 // `.prettierrc.json`
-"prettier-config-smallela"
+"prettier-config-ngs"
 ```
 
 ```js
 // `prettier.config.js` or `.prettierrc.js`
-module.exports = 'prettier-config-smallela';
+module.exports = 'prettier-config-ngs';
 ```
 
 ## License

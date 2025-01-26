@@ -4,9 +4,9 @@ title: 'Nx Commands'
 permalink: '/nx-commands'
 ---
 
-[![npm](https://img.shields.io/npm/v/nx-commands-smallela.svg?style=plastic)](https://www.npmjs.com/package/nx-commands-smallela) [![npm](https://img.shields.io/npm/dw/nx-commands-smallela.svg?style=plastic)](https://www.npmjs.com/package/nx-commands-smallela) [![npm](https://img.shields.io/npm/dm/nx-commands-smallela.svg?style=plastic)](https://www.npmjs.com/package/nx-commands-smallela) [![npm](https://img.shields.io/npm/dy/nx-commands-smallela.svg?style=plastic)](https://www.npmjs.com/package/nx-commands-smallela) [![npm](https://img.shields.io/npm/dt/nx-commands-smallela.svg?style=plastic)](https://www.npmjs.com/package/nx-commands-smallela)
+[![npm](https://img.shields.io/npm/v/nx-commands-ngs.svg?style=plastic)](https://www.npmjs.com/package/nx-commands-ngs) [![npm](https://img.shields.io/npm/dw/nx-commands-ngs.svg?style=plastic)](https://www.npmjs.com/package/nx-commands-ngs) [![npm](https://img.shields.io/npm/dm/nx-commands-ngs.svg?style=plastic)](https://www.npmjs.com/package/nx-commands-ngs) [![npm](https://img.shields.io/npm/dy/nx-commands-ngs.svg?style=plastic)](https://www.npmjs.com/package/nx-commands-ngs) [![npm](https://img.shields.io/npm/dt/nx-commands-ngs.svg?style=plastic)](https://www.npmjs.com/package/nx-commands-ngs)
 
-[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/smallela-workspace.svg?style=plastic)](https://github.com/sridharmallela/smallela-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/smallela-workspace/main/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/tags) [![GitHub release](https://img.shields.io/github/release/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/releases) [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/ngs-workspace.svg?style=plastic)](https://github.com/sridharmallela/ngs-workspace/pulls) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/ngs-workspace/main/LICENSE)
 
 This module exports all the commands that Nx supports programmatically.
 
@@ -24,17 +24,17 @@ This module exports all the commands that Nx supports programmatically.
 ## Installation
 
 ```bash
-  $ npm i --save-dev nx-commands-smallela
+  $ npm i --save-dev nx-commands-ngs
 ```
 
 ```bash
-  $ yarn add --dev nx-commands-smallela
+  $ yarn add --dev nx-commands-ngs
 ```
 
 ## Usage
 
 ```ts
-import { NxCommands } from 'nx-commands-smallela';
+import { NxCommands } from 'nx-commands-ngs';
 
 // check what things have been modified for Nx Project
 affected = await NxCommands.getAffected(destBranch);

@@ -1,5 +1,5 @@
 {
-  "name": "@smallela/source",
+  "name": "@ngs/source",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
@@ -10,13 +10,13 @@
   "scripts": {
     "build": "nx run-many -t build",
     "clean": "rimraf -g \"./packages/**/out-tsc\" \"./packages/**/dist\" \"./coverage\"",
-    "commitlint-config": "is-ci || nx build commitlint-config",
-    "format": "prettier --write",
+    "commitlint:config": "is-ci || nx build commitlint-config",
+    "format": "prettier --cache --write",
     "lint": "nx run-many -t lint",
     "migrate": "nx migrate --run-migrations",
-    "postinstall": "npm run commitlint-config && npm run prettier-config",
+    "postinstall": "npm run commitlint:config && npm run prettier:config",
     "prepare": "is-ci || husky",
-    "prettier-config": "is-ci || nx build prettier-config",
+    "prettier:config": "is-ci || nx build prettier-config",
     "test": "nx run-many -t test",
     "update": "nx migrate latest",
     "validate": "npm run lint && npm test && npm run build"

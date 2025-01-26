@@ -1,4 +1,4 @@
-# smallela-workspace
+# ngs-workspace
 
 ## Post Steps for Scaffold
 
@@ -19,18 +19,18 @@
     "description": "",
     "author": "Sridhar Mallela",
     "license": "MIT",
-    "homepage": "https://sridharmallela.github.io/smallela-workspace/<pkg-name>/",
+    "homepage": "https://sridharmallela.github.io/ngs-workspace/<pkg-name>/",
     "type": "commonjs",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "typings": "./dist/index.d.ts",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/sridharmallela/smallela-workspace.git",
+      "url": "git+https://github.com/sridharmallela/ngs-workspace.git",
       "directory": "packages/<pkg-name>"
     },
     "bugs": {
-      "url": "https://github.com/sridharmallela/smallela-workspace/issues"
+      "url": "https://github.com/sridharmallela/ngs-workspace/issues"
     },
     "config": {
       "unsafe-perm": true
