@@ -1,4 +1,4 @@
-import { setOutput, setFailed, debug, info } from '@actions/core';
+import { debug, info, setFailed, setOutput } from '@actions/core';
 
 import { execSync } from 'node:child_process';
 

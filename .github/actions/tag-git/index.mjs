@@ -1,4 +1,4 @@
-import { getInput, setFailed, debug, info } from '@actions/core';
+import { debug, getInput, info, setFailed } from '@actions/core';
 import { context, getOctokit } from '@actions/github';
 
 try {

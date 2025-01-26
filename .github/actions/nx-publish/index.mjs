@@ -1,8 +1,8 @@
-import { getInput, setOutput, setFailed, debug, info } from '@actions/core';
+import { debug, getInput, info, setFailed, setOutput } from '@actions/core';
 
 import { execSync } from 'node:child_process';
-import { gt } from 'semver';
 import { readFileSync } from 'node:fs';
+import { gt } from 'semver';
 
 const getLatestTag = project => {
   try {
