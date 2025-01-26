@@ -34,10 +34,7 @@
     "jest-config",
     "preset",
     "jest preset",
-    "jest-preset",
-    "smallela",
-    "sridhar",
-    "mallela"
+    "jest-preset"
   ],
   "peerDependencies": {
     "tslib": ">=2"

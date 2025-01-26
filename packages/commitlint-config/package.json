@@ -32,10 +32,7 @@
   "keywords": [
     "commitlint",
     "commitlint config",
-    "commitlint-cli",
-    "smallela",
-    "sridhar",
-    "mallela"
+    "commitlint-cli"
   ],
   "peerDependencies": {
     "tslib": ">=2"

@@ -47,10 +47,7 @@
   "keywords": [
     "eslint",
     "eslint config",
-    "eslint-config",
-    "smallela",
-    "sridhar",
-    "mallela"
+    "eslint-config"
   ],
   "peerDependencies": {
     "tslib": ">=2"
