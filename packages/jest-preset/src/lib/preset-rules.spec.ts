@@ -1,11 +1,11 @@
 jest.mock('is-ci', () => false);
 
-import { JEST_CONFIG_NGS } from './preset-rules';
+import { JEST_CONFIG } from './preset-rules';
 
 describe('Prettier Config ---', () => {
   test('for valid', () => {
-    expect(JEST_CONFIG_NGS).toBeDefined();
-    expect(JEST_CONFIG_NGS).toEqual({
+    expect(JEST_CONFIG).toBeDefined();
+    expect(JEST_CONFIG).toEqual({
       collectCoverage: true,
       collectCoverageFrom: '<rootDir>/**/*.[jt]s?(x)',
       coverageDirectory: '<rootDir>/coverage',
