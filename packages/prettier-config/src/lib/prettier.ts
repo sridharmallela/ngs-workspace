@@ -79,7 +79,7 @@ const prettierConfig: Config = {
       }
     },
     {
-      files: '*.svg',
+      files: ['*.svg'],
       options: {
         parser: 'html'
       }

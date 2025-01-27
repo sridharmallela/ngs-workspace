@@ -59,7 +59,7 @@ describe('Prettier Config ---', () => {
           ],
           options: { parser: 'json' }
         },
-        { files: '*.svg', options: { parser: 'html' } },
+        { files: ['*.svg'], options: { parser: 'html' } },
         {
           files: ['*.xml'],
           options: {
