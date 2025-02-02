@@ -37,17 +37,17 @@ try {
     const npmTag = getLatestTag(pkgName);
     debug(`${proj} >> npmTag: ${npmTag}`);
     if (gt(pkgTag, npmTag)) {
-      info(`${proj} >> copying ".npmrc", ".npmignore", "${proj}.md"`);
+      info(`${proj} >> copying ".npmrc", ".npmignore", "LICENSE", "README.md"`);
       execSync(`cp ${workspace}/.npmrc ${projPath}`);
       execSync(`cp ${workspace}/.npmignore ${projPath}`);
       execSync(`cp ${workspace}/LICENSE ${projPath}`);
       execSync(`cp ${workspace}/docs/${proj}.md ${projPath}/README.md`);
-      debug(`${proj} >> Executing "cd ${projPath} && npm publish"`);
+      info(`${proj} >> Executing "cd ${projPath} && npm publish"`);
       execSync(`cd ${projPath} && npm publish`);
       info(`Completed npm publish for ${proj} and tag is v${pkgTag}`);
       tags.push(`${proj}@${pkgTag}`);
       if (npmTag !== '0.0.0') {
-        debug(`${proj} >> Executing npm deprecate"`);
+        info(`${proj} >> Executing npm deprecate"`);
         execSync(
           `npm deprecate ${pkgName}@"<${pkgTag}" "Version is no longer supported, deprecated in favor of latest version, please update to \"${pkgName}@${pkgTag}\", which offers more features, better tests and offers security fixes. Any enhancements or bug fix requests to this version are no more supported."`
         );
