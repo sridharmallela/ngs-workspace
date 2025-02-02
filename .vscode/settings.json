@@ -32,7 +32,7 @@
   },
   "cSpell.allowCompoundWords": true,
   "cSpell.diagnosticLevel": "Warning",
-  "cSpell.words": ["Buildable", "Mallela", "Sridhar"],
+  "cSpell.words": ["Buildable", "Mallela", "Sridhar", "unspaced"],
   "diffEditor.ignoreTrimWhitespace": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
