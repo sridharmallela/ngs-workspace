@@ -1,14 +1,17 @@
 {
   "name": "jest-preset-ngs",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "jest preset for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
-  "homepage": "https://sridharmallela.github.io/ngs-workspace/jest-preset/",
+  "homepage": "https://sridharmallela.github.io/ngs-workspace/jest-preset",
   "type": "commonjs",
   "main": "./jest-preset.cjs",
   "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
+  "exports": {
+    "/rules": "./dist/lib/preset-rules.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sridharmallela/ngs-workspace.git",
@@ -29,6 +32,7 @@
     "jest-preset"
   ],
   "peerDependencies": {
+    "jest": ">=27",
     "tslib": ">=2"
   },
   "dependencies": {
