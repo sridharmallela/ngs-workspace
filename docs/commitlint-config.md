@@ -77,7 +77,7 @@ module.exports = {
 
 ## Custom Configuration <a id="custom-configuration"></a>
 
-There are many ways to implement custom configurations. Review [the complete list of possible rules](https://github.com/conventional-changelog/commitlint/blob/master/docs/reference-rules.md) to learn more.
+There are many ways to implement custom configurations. Review [the complete list of possible rules](https://github.com/conventional-changelog/commitlint/blob/master/docs/reference/rules.md) to learn more.
 
 You can override the rules immediately following the `extends` property. See the following examples.
 
