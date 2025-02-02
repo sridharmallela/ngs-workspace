@@ -15,6 +15,7 @@ module.exports = {
     '/generated/',
     '/node_modules/',
     '(.*)\\.d.ts',
+    'bin.[jt]s',
     'index.[jt]s',
     'jest.config.ts',
     'jest.preset.cjs',
