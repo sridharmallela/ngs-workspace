@@ -1,10 +1,10 @@
 {
   "name": "print-cli",
-  "version": "2.1.11",
+  "version": "2.1.12",
   "description": "print command line interface",
   "author": "Sridhar Mallela",
   "license": "MIT",
-  "homepage": "https://sridharmallela.github.io/ngs-workspace/print-cli/",
+  "homepage": "https://sridharmallela.github.io/ngs-workspace/print-cli",
   "type": "commonjs",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
