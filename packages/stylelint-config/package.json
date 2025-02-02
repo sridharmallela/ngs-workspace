@@ -1,10 +1,10 @@
 {
   "name": "stylelint-config-ngs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Configuration for Stylelint",
   "author": "Sridhar Mallela",
   "license": "MIT",
-  "homepage": "https://sridharmallela.github.io/ngs-workspace/stylelint-config/",
+  "homepage": "https://sridharmallela.github.io/ngs-workspace/stylelint-config",
   "type": "commonjs",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -45,6 +45,7 @@
     "Less Lint"
   ],
   "peerDependencies": {
+    "stylelint": ">=14",
     "tslib": ">=2"
   }
 }
