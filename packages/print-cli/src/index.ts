@@ -1,5 +1,2 @@
-#!/usr/bin/env node
-
-import { PrintCli } from './lib/cli';
-
-export default new PrintCli();
+export * from './lib/cli';
+export * from './lib/printer';

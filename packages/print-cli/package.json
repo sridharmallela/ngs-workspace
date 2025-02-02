@@ -1,6 +1,6 @@
 {
   "name": "print-cli",
-  "version": "2.1.12",
+  "version": "2.1.13",
   "description": "print command line interface",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "unsafe-perm": true
   },
   "bin": {
-    "print-cli": "./dist/index.js"
+    "print-cli": "./dist/bin.js"
   },
   "keywords": [
     "print",
