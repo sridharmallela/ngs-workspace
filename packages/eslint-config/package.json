@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ngs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Configuration for ESLint",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -55,8 +55,7 @@
     "eslint": ">=7",
     "eslint-plugin-import": ">=2.31",
     "eslint-plugin-jest": ">=27",
-    "eslint-plugin-jest-formatting": ">=3",
-    "tslib": ">=2"
+    "eslint-plugin-jest-formatting": ">=3"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
