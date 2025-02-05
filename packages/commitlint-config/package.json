@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-ngs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Commitlint configs for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -35,7 +35,6 @@
     "commitlint-cli"
   ],
   "peerDependencies": {
-    "@commitlint/cli": ">=19",
-    "tslib": ">=2"
+    "@commitlint/cli": ">=19"
   }
 }

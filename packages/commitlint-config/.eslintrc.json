@@ -21,7 +21,7 @@
         "@nx/dependency-checks": [
           "error",
           {
-            "ignoredDependencies": ["@commitlint/cli", "tslib"],
+            "ignoredDependencies": ["@commitlint/cli"],
             "ignoredFiles": ["{projectRoot}/eslint.config.{js,cjs,mjs}"]
           }
         ]
