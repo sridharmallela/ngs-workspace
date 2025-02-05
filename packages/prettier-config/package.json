@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-ngs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "prettier configs for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -35,8 +35,7 @@
     "prettier-config"
   ],
   "peerDependencies": {
-    "prettier": ">=3.4",
-    "tslib": ">=2"
+    "prettier": ">=3.4"
   },
   "dependencies": {
     "@prettier/plugin-xml": ">=3.4"
