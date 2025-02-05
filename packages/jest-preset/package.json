@@ -1,6 +1,6 @@
 {
   "name": "jest-preset-ngs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "jest preset for my projects",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -29,8 +29,7 @@
     "jest-preset"
   ],
   "peerDependencies": {
-    "jest": ">=27",
-    "tslib": ">=2"
+    "jest": ">=27"
   },
   "dependencies": {
     "is-ci": ">=4.1"
