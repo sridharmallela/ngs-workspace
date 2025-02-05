@@ -1,6 +1,6 @@
 {
   "name": "print-cli",
-  "version": "2.1.13",
+  "version": "2.1.14",
   "description": "print command line interface",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -31,9 +31,6 @@
     "figlet",
     "crazy print"
   ],
-  "peerDependencies": {
-    "tslib": ">=2"
-  },
   "dependencies": {
     "commander": ">=13.1",
     "colors": ">=1.4",
