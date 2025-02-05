@@ -21,7 +21,7 @@
         "@nx/dependency-checks": [
           "error",
           {
-            "ignoredDependencies": ["stylelint", "tslib"],
+            "ignoredDependencies": ["stylelint"],
             "ignoredFiles": ["{projectRoot}/eslint.config.{js,cjs,mjs}"]
           }
         ]

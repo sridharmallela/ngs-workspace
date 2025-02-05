@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-ngs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Configuration for Stylelint",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -45,7 +45,6 @@
     "Less Lint"
   ],
   "peerDependencies": {
-    "stylelint": ">=14",
-    "tslib": ">=2"
+    "stylelint": ">=14"
   }
 }
