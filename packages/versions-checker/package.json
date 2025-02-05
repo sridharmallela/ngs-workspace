@@ -1,6 +1,6 @@
 {
   "name": "versions-checker",
-  "version": "2.1.13",
+  "version": "2.1.14",
   "description": "check installed versions of node, npm, yarn, and git",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -33,9 +33,6 @@
     "yarn version",
     "eslint version"
   ],
-  "peerDependencies": {
-    "tslib": ">=2"
-  },
   "dependencies": {
     "commander": ">=13.1",
     "semver": ">=7.7"
