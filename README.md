@@ -6,7 +6,7 @@
 - Replace `'../` to `'./../`
 - In `jest.config.ts`, update `coverageDirectory: './../../coverage/..'`
 - In `tsconfig.lib.json`, update `"tsBuildInfoFile": "./out-tsc/tsconfig.lib.tsbuildinfo"` and `"outDir": "./dist",`
-- In `.eslintrc.json`, update `@nx/dependency-checks` with `"ignoredDependencies": ["tslib"],`
+- In `.eslintrc.json`, update `@nx/dependency-checks` with `"ignoredDependencies": [],`
 - In `package.json`
 
   - remove `tslib` from `dependencies` and move it to `peerDependencies`
