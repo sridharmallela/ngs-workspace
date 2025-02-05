@@ -1,6 +1,6 @@
 {
   "name": "npm-commands-ngs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Reusable commands for NPM",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -34,7 +34,5 @@
     "npm commands",
     "npm-commands"
   ],
-  "peerDependencies": {
-    "tslib": ">=2"
-  }
+  "peerDependencies": {}
 }
